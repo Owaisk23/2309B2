@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="mobile.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="mobile.dtd" type="application/xml-dtd"?>
+<?xml-stylesheet href="mobile.xsl" type="text/xsl"?>
+<mobileShop>
+    <mobile>
+        <emi>001</emi>
+        <name>Note 18 Ultra</name>
+        <brand>Samsung</brand>
+        <price>278800</price>
+    </mobile>
+    <mobile>
+        <emi>002</emi>
+        <name>Pixel 6</name>
+        <brand>Google</brand>
+        <price>78800</price>
+    </mobile>
+    <mobile>
+        <emi>003</emi>
+        <name>Note 11 Pro</name>
+        <brand>Infinix</brand>
+        <price>28800</price>
+    </mobile>
+    <mobile>
+        <emi>004</emi>
+        <name>Camon 19 air</name>
+        <brand>Techno</brand>
+        <price>38800</price>
+    </mobile>
+    <mobile>
+        <emi>005</emi>
+        <name>Pakimon 16 Yyy</name>
+        <brand>RealMe</brand>
+        <price>23800</price>
+    </mobile>
+</mobileShop>
