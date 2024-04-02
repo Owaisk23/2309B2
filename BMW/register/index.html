@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .container{
+            margin: auto;
+            padding: 20px;
+            width: 500px;
+            border: 1px solid black;
+        }
+        #error{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SignUp Here</h1>
+        <form action="#">
+            <label for="user_name">Enter Name:</label>
+            <input type="text" id="user_name" placeholder="Enter name here"><br>
+            <label for="user_email">Enter Email:</label>
+            <input type="email" id="user_email" placeholder="Enter email here"><br>
+            <label for="user_password">Enter Password:</label>
+            <input type="password" id="user_password" placeholder="Enter password here"><br>
+            <span id="error" style="color: red;" >Error Msg</span><br>
+            <input type="button" value="SignUp" onclick="signUp()">
+        </form>
+        <a href="./login/login.html">Already SignUp?</a>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

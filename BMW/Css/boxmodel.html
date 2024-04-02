@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            border: 1px solid black;
+            margin-top: 80px;
+            margin-left: 50px;
+            margin-right: 150px;
+            margin-bottom: 150px;
+            padding-top: 50px;
+            padding-left: 70px;
+            padding-bottom: 77px;
+            padding-right: 80px;
+            transition: all 2s 0.5s linear;
+        
+        }
+        .box:hover{
+            width: 400px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

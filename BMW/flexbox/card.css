@@ -1,0 +1,27 @@
+body{
+    background-color: bisque;
+}
+
+.container{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    border: 1px solid rebeccapurple;
+    width: 200px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.image img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.links{
+    text-align: end;
+    margin-right: 10px;
+}

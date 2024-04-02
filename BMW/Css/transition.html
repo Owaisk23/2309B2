@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            /* transition */
+            transition-property: all;
+            transition-duration: 1.5s;
+
+            transition-delay: 0.5s;
+
+            /* tranistion: property duration timing-function delay  */
+
+            /* transition: all 1.5s 2s; */
+        }
+
+        .cont-1 {
+            transition-timing-function: linear;
+            /* linear , ease-in, ease-out, ease-in-out */
+
+        }
+
+        .cont-2 {
+            transition-timing-function: ease-in;
+        }
+
+        .cont-3 {
+            transition-timing-function: ease-out;
+        }
+
+        .cont-4 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .container:hover {
+            width: 600px;
+            background-color: yellow;
+        }
+
+
+
+
+
+
+
+
+        
+
+        /* Circle Transition */
+        .circle_container {
+            width: 500px;
+            height: 500px;
+            line-height: 500px;
+            text-align: center;
+            background-color: red;
+            /* tranistion: property duration timing-function delay  */
+
+            transition: all 1s linear 0s;
+
+        }
+
+        .circle_container:hover {
+            color: white;
+            border-radius: 50%;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container cont-1"></div>
+    <div class="container cont-2"></div>
+    <div class="container cont-3"></div>
+    <div class="container cont-4"></div> -->
+
+
+
+    <div class="circle_container">I'm Circle</div>
+</body>
+
+</html>

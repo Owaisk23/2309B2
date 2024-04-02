@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Forms in HTML 5</h2>
+    <form action="#">
+
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn"> 
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname"><br><br>
+
+        <label for="email">Enter email:</label>
+        <input type="email" id="email"> 
+
+        <label for="pass">Enter password:</label>
+        <input type="password" id="pass"> <br><br>
+
+        <label for="age">Enter Age:</label>
+        <input type="number" id="age">
+ 
+        <label for="dob">Select DOB:</label>
+        <input type="date" id="dob"><br><br>
+
+        <label>Gender:</label>
+        
+        <input type="radio" name="gender" id="m">
+        <label for="m">Male</label>
+
+        <input type="radio" name="gender" id="f">
+        <label for="f">Female</label> <br><br>
+
+        <label for="">Are you an Employed Person?</label> <br><br>
+
+        <input type="radio" name="emp" id="y">
+        <label for="y">Yes</label>
+     
+        <input type="radio" name="emp" id="n">
+        <label for="n">No</label><br><br>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" id="cric">
+            <label for="cric">Cricket</label>
+            <input type="checkbox" id="swin">
+            <label for="swin">Swimming</label>
+            <input type="checkbox" id="football">
+            <label for="football">Football</label>
+        </fieldset>
+
+        <p>Select country from below list: </p>
+        
+        <select name="country">
+            <option value="pak">Pakistan</option>
+            <option value="iran">Iran</option>
+            <option value="china">China</option>
+            <option value="ind">India</option>
+            <option value="iraq">Iraq</option>
+            <option value="afg">Afghanistan</option>
+            <option value="sri" selected>Srilanka</option>
+        </select>
+        <br><br>
+
+        <input type="file" name="" id="">
+        <br>
+
+        <label for="">Downloading...</label>
+        <progress value="50" max="100"></progress>
+        <!-- <input type="range" name="" id=""> -->
+         <br> <br>
+    
+        <input type="reset" value="Reset Form">
+    
+        <input type="submit" value="Submit Form">
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-color: bisque;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    background-color: cadetblue;
+}
+#head{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 23px;
+}
+#heading{
+    color: brown;
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+    text-align: right;
+}
+.para{
+    background-color: chocolate;
+    text-transform: capitalize;
+    font-weight: bolder;
+    text-indent: 7em;
+    /* word-spacing: 15px; */
+}
+
+/* p::first-letter{
+    font-size: xx-large;
+    color: darkblue;
+} */
+
+/* p::first-line{
+    color: chartreuse;
+} */
+
+.para::before{
+    content: "Para inserted before ";
+}
+
+p::after{
+    content: "Para inserted after";
+}
