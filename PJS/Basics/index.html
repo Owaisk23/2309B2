@@ -130,16 +130,16 @@
 
         // Each line below is a statement
 
-        var a = 4; // Statement 1
-        var b = 2; // Statement 2
-        var c = 0; // Statement 3
-        c = a + b; // Statement 4
-        alert(a); // Statement 4
-        console.log(c); // Statement 4
+        // var a = 4; // Statement 1
+        // var b = 2; // Statement 2
+        // var c = 0; // Statement 3
+        // c = a + b; // Statement 4
+        // alert(a); // Statement 4
+        // console.log(c); // Statement 4
 
         // End of Statement with semicolon ;
-                i = 3; j = 5; k = i + j;
-        alert(i);console.log(k);
+        //         i = 3; j = 5; k = i + j;
+        // alert(i);console.log(k);
 
 
 
@@ -152,6 +152,7 @@
         // console.log(a)
 
         // expressions
+      
         // a + b; // expression
         // 4 / 2; // expression
         // var a = 5;
@@ -159,8 +160,9 @@
         // "John" + " " + "Doe"; // expression
 
 
-
         // comments
+
+        
         /*
         a = 1;
         a = 1;
@@ -176,18 +178,18 @@
         // var _xyz = 44;
         // var $work = 90;
         // var user2 = 56;
-        // var i_info = 99;
+        // var user_info = 99;
         // var my$work = 77;
 
 
         // Illegal Names
         // Illegal names:
-        // var 2user = 12; // Can't start with number
+        // var 5user = 12; // Can't start with number
         // var my user = 23; // Can't contains space
         // var hello#world = 34;
         // var my-info = 44;
         // var my?info = 45;
-        // var my* info = 45;
+        // var my*info = 45;
 
 
 
@@ -195,11 +197,11 @@
 
         // var rose = "Red";
         // var Rose = "Yellow";
-        // var ROSE = "Pink";
+        // var rOSE = "Pink";
 
         // console.log(Rose);
         // console.log(ROSE);
-        // console.log(rose);
+        // console.log(rOSE);
 
         // Camel Case
         // var userResponse
@@ -211,8 +213,9 @@
         // Arithmeatic Methods
 
         // var a = +prompt("Enter a Number: ");
+        // var a = Number(prompt("Enter a Number: "));
         // var b = +prompt("Enter a Number: ");
-
+        // // Number(), parseFloat(),parseInt()
         // var add = a + b;
         // console.log("Add result is: " + add);
         // var mult = a * b;
@@ -238,31 +241,38 @@
 
         // shorthand
         // var a = 5;
-        // // a = a + 7;
-        // a += 7;
+        // a = a + 7;
+        // // a += 7;
         // console.log(a);
 
 
         // Ambuguity BODMAS
         // var a = 5 + 2 * 3 - 2 / 2;
-        //      7 * 3 - 1
-        //      21 - 1 
-        //      20
+        // 
 
         // DMAS
 
         // 5 + 2 * 3 - 1
-        //  5 + 6 - 1
-        // 11 - 1
-        // 10
+        // 7 * 3 -1
+        // 21 -1
+        // 20 
+
+        /*
+        5 + 2 * 3 - 1
+        5 + 6 - 1
+        11 - 1
+        10
+
+        */
+
 
         // console.log(a); 
-
+        // BODMAS
         // var a = 5 + 2 * (3 - 2) / 2;
-        //      5 + 2 * 1 / 2;
-        //      5 + 2 * 0.5;
-        //      5 + 1;
-        //      6;
+        //         5 + 2 * 1 / 2
+        //         5 + 2 * 0.5
+        //         5 + 1
+        //          6  
         // console.log(a); 
 
         // var a = 3 + 7 * 2; // result 17
@@ -280,24 +290,24 @@
 
         // var x = 5;
 
-        // var y = x + ++x + x++ + x + x++ + ++x + x + ++x;
-        // //  5 + 6    + 6 +  7 +  7  + 9   + 9 +  10 =59
+        // var y = x + ++x + x++ + x + x++ + ++x + x + ++x + ++x + x;
+        // // //      5 + 6   +  6 +  7 + 7  +  9  +  9 +  10 + 11 + 11 
         // console.log(x)
         // console.log(y)
 
         // var x = 2;
 
         // var y = x - --x + ++x + x++ + x++ - --x + ++x + ++x - x-- + ++x + x;
-        //      2 -  1  +  2 +   2 +  3  -  3  +   4  +  5 -   4 +   5  +  5 
+        // //        2 -  1  +   2  +  2  +  3  -  3  +  4  +  5  -  5   + 5 +  5
+        // console.log(x); //5
+        // console.log(y);  //19
 
-        // console.log(x); //4
-        // console.log(y);  //29
-
-
+        // var a = 4;
         // var b = --a - a++ + ++a - --a + ++a - a-- + ++a +
         // a-- + a++ - --a - ++a; 
 
-
+        // //      
+        // console.log(a);
 
         // var firstName = "Abraham";
         // var lastName = "aLincoln";
@@ -307,19 +317,25 @@
 
 
 
-        // var a = "6" + 2; // 62
+        // var a = "6" + 2; //62
         // console.log(a)
-        // var b = 3 + "6"; //36
+
+        // var b = 3 + "6";  //36
         // console.log(b) 
-        // var c = "Hello " + 2; // Hello 2
+
+        // var c = "Hello " + 2;
         // console.log(c)
-        // var d = 2 + "Hello "; // 2HEllo
+        
+        // var d = 2 + "Hello "; 
         // console.log(d)
-        // var e = "Hello " + 3 + 4; // Hello 34
-        // console.log(e)
-        // var f = 3 + 4 + "Hello "; //7hello 
+        
+        // var e = "Hello " + 3 + 4; 
+        // console.log(e);
+
+        // var f = 3 + 4 + "Hello "; 
         // console.log(f)
-        // var g = "Hello " + (3 + 4); //Hello 7
+        
+        // var g = "Hello " + (3 + 4); 
         // console.log(g)
 
         // Prompt
@@ -327,9 +343,10 @@
 
         // var ques = "What is your name?";
 
-        // var defaultAns = "Owais Ahmed";
+        // var defaultAns = "Owais Ahmed Khan";
 
         // // prompt("What is your age?" , 18);
+
         // var userResponse = prompt(ques , defaultAns);
 
         // alert("Your name is: " + userResponse);
@@ -365,11 +382,15 @@
 
 
         // var a = Number(true); //returns 1
+        // console.log(a);
         // var b = Number(false); //returns 0
+        // console.log(b);
         // var c = Number("999"); //returns 999
+        // console.log(c);
         // var d = Number("999 888"); //returns NAN
+        // console.log(d);
         // var e = Number("Hello"); //returns NAN
-
+        // console.log(e);
 
         // Comparsion Operators
 
@@ -389,15 +410,15 @@
 
 
         // b. && (AND)
-        // console.log(true && true); //T
+        // console.log(true && true); // T
         // console.log(false && true); // F
-        // console.log(true && false); //F 
-        // console.log(false && false);//F
-        // // || (OR)
-        // console.log(true || true); //T
-        // console.log(false || true); // T
-        // console.log(true || false); //T 
-        // console.log(false || false);//F
+        // console.log(true && false); // F
+        // console.log(false && false);// F
+        // // // || (OR)
+        // console.log(true || true); // T
+        // console.log(false || true); // T 
+        // console.log(true || false); // T
+        // console.log(false || false);// F
 
         // var a = 60;
         // var b = a > 50 && a < 70;
@@ -418,27 +439,27 @@
 
 
         //   // c. !(NOT)
-        // console.log(!true); // F
-        // console.log(!false); // T
+        // console.log(!true); // 
+        // console.log(!false); // 
 
         // var a = 60;
         // var b = !(a < 50);
-        // alert(b); //T
+        // alert(b); //
 
         // var c = 80;
         // var d = !(c > 50);
-        // alert(d);//F
+        // alert(d);//
 
 
 
-        //returns false, evaluation stops at first value
-        // var a = false && true && false;
+    //    // // returns false, evaluation stops at first value
+    //     var a = false && true && false;
 
-        // //returns false, evaluation stops at last value
-        // var b = true && true && false;
+    //     // //returns false, evaluation stops at last value
+    //     var b = true && true && false;
 
-        // //returns false, evaluation stops at second value
-        // var c = true && false && true;
+    //     // //returns false, evaluation stops at second value
+    //     var c = true && false && true;
 
 
 
@@ -452,7 +473,7 @@
         // //returns true, evaluation stops at last value
         // var f = false || false || true
 
-
+        // Conditional Statements
 
         // var age = 8;
 
@@ -463,7 +484,7 @@
         // }
 
 
-        // var age = 15;
+        // var age = 25;
 
         // if (age > 18) {
         //     console.log("Qualifies for driving");
@@ -472,7 +493,7 @@
         // }
 
 
-        // var score = 70;
+        // var score = 98;
         // if (score > 80) {
         //     console.log("Grade A");
         //     if (score > 90) {
@@ -507,6 +528,9 @@
         // else {
         // console.log("It's a consonants");
         // }
+
+
+
         // var input = prompt("Enter any Alphabet");
         // var sameLevel = input.toUpperCase();
         // if(sameLevel == "A" || sameLevel == "E" || sameLevel == "I" || sameLevel == "O" || sameLevel == "U"){
@@ -559,10 +583,10 @@
         // var sundayTemprature = 22;
 
         // var temperatures = [34,12,27,65,34,28, 19,89];
-        // indexes      0,  1, 2, 3, 4, 5,  6
+        // // indexes          0,  1, 2, 3, 4, 5,  6
 
         // console.log(temperatures);
-        // console.log(temperatures[7]);
+        // console.log(temperatures[6]);
 
 
 
@@ -575,7 +599,7 @@
 
         // var foods = new Array("Pizza", "Burger", "Snacks");
 
-        // console.log(foods[2]);
+        // console.log(foods[1]);
         // multiple datatypes
         // var arr1 = ["Hello", "World", "Bye"];
         // var arr2 = [29, 38, 16, 22];
@@ -583,7 +607,7 @@
         // var arr4 = [23.2, 45.8, 98.12];
         // var arr5 = [{ name: "John" }, { name: "Jason" }];
         // var arr6 = [74, "Hello", true, { name: "John" }];
-
+                //  [num, str,    boolean, obj]
         // Array Methods
         // pop()
 
@@ -594,18 +618,18 @@
 
         // console.log(countries);
 
-        // push()
+        // // push()
 
         // var a = 80
         // var marks = [77, 89, 90, 23, 45];
-        // add elemnt at last
+        // // add elemnt at last
         // marks.push(a);
 
         // console.log(marks);
 
         // shift()
 
-        // var stds = ["Abdullah", "Ali", "Sana", "Maria", "Hafeez", "Hassan"];
+        // var stds = ["Abdullah", "Huzaifa", "Ayan", "Luqman", "Rafay", "Ahsan"];
         // console.log(stds);
         // Remove element from start
         // stds.shift();
@@ -619,12 +643,15 @@
 
 
         // slice()
-        // var num = [12, 13, 15, 66, 78, 70, 102, 130, 90, 86, 45, 55]
+        // var num = [12, 13, 15, 66, 78, 70, 102, 130, 90, 86, 45, 55];
+            // index: 0,1,2....
+            // length: 1,2....
         // console.log(num)
-        // var sliceArray = num.slice(9, 12);
+        // var sliceArray = num.slice(1, 5);
         //                 // slice(startingIndex, EndLength)
 
         // console.log(sliceArray)
+
         // // reverse()
         // var reverseArray = num.reverse();
 
@@ -650,7 +677,7 @@
         // splice()
         // var stds = ["Abdullah", "Ali", "Sana", "Maria", "Hafeez", "Hassan"];
         // console.log(stds)
-        // var spliceArray = stds.splice(2, 0, "Zainab", "Ramsha", "Basim");
+        // var spliceArray = stds.splice(2, 2, "Zainab", "Ramsha", "Basim");
         //                         // splice(startingIndex, DeleteCount, AddElements)
         // console.log(stds);
 
@@ -663,27 +690,28 @@
         // console.log(typeof(stringNum));//string
         // console.log(stringNum);
         
-
+        var num = [12, 13, 15, 66, 78, 70, 102, 130, 90, 86, 45, 55];
         // filter()
-        // var oddNum =  number.filter((num) =>  num % 2 != 0);
-        // console.log(oddNum);
+        var oddNum =  num.filter((num) =>  num % 2 != 0);
+        console.log(oddNum);
         
+        var numb = [13,15,17,19];
         // some()
-        // var someNum =  number.some((num) =>  num % 2 == 0);
-        // console.log(someNum); //true
+        // var someNum =  numb.some((num) =>  num % 2 == 0);
+        // console.log(someNum); //false
 
 
-        // // every()
-        // var everyNum =  number.every((num) =>  num % 2 == 0);
-        // console.log(everyNum); //false
+        // // // every()
+        // var everyNum =  numb.every((num) =>  num % 2 != 0);
+        // console.log(everyNum); //true
 
         // // find()
-        // var findNum =  number.find((num) =>  num > 7);
+        // var findNum =  num.find((num) =>  num > 70);
         // console.log(findNum);
-        // var number = [1, 2, 3, 4, 5, 6, 7];
+        var number = [1, 2, 3, 4, 5, 6, 7];
         // // // map
-        // const doubleNum = number.map((num) => num * 3);
-        // console.log(doubleNum);
+        const doubleNum = number.map((num) => num * 3);
+        console.log(doubleNum);
         
 
         // // for-each
@@ -691,16 +719,16 @@
         // a.forEach((num) => console.log(num*2));
 
         //  // // reduce method
-        //  const sum = number.reduce((total, num) =>
-        // total + num, 0);
-        // console.log(sum) 
+         const sum = number.reduce((total, num) =>
+        total + num, 0);
+        console.log(sum) 
 
-        // var fruits = ['Apple', 'grapes', 'Banana', 'Orange', 'Orange']
-        // // //              0        1
-        // // var indexFruits = fruits.indexOf('Banana');
-        // var lastindexFruits = fruits.lastIndexOf('Orange');
-        // // console.log(indexFruits)//0
-        // console.log(lastindexFruits)//3
+        var fruits = ['Apple', 'grapes', 'Banana', 'Orange', 'Orange']
+        // //              0        1
+        // var indexFruits = fruits.indexOf('Banana');
+        var lastindexFruits = fruits.lastIndexOf('Kiwi');
+        // console.log(indexFruits)//0
+        console.log(lastindexFruits)//3
         
     </script>
 </body>
