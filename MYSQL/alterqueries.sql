@@ -89,10 +89,24 @@ where emp_lname = "Ahmed";
 select * from employee
 where emp_hiredate IS NULL;
 
+use 2309b2;
 
+select * from employee;
 
+UPDATE employee
+set emp_hourlypay = 66.52,
+emp_hiredate = "2020-05-03"
+where emp_id = 9;
 
+set autocommit = on;
 
+delete from employee
+where emp_id = 10;
 
+rollback;
 
+update employee
+set emp_hourlypay = 10.52
+where emp_id = 10;
 
+commit;
