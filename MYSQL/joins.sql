@@ -66,11 +66,11 @@ manager_id int
 );
 insert into emp values
 (1,"Haris",2),
-(2,"owais",3),
+(2,"Owais",3),
 (3,"Ebad",null),
-(4,"afzal",1),
-(5,"usama",4),
-(6,"moiz",1);
+(4,"Afzal",1),
+(5,"Usama",4),
+(6,"Moiz",1);
 
 select * from emp;
  -- Self Join
@@ -86,8 +86,8 @@ manager_id int
 insert into emp2 values
 (1,"Haris",2),
 (2,"habib",null);
-select * from emp2;
-  
+select * from emp;
+
 select * from emp
 union
 select * from emp2;

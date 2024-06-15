@@ -7,21 +7,16 @@
 // var att = document.getElementById("para").attributes;
 // console.log(att);
 
-
 // document.getElementById("para").setAttribute("class", "head");
 
 // document.getElementById("para").removeAttribute("class");
 
 // const element = document.getElementsByTagName('p')
-// console.log(element)
 
-
-
-// document.getElementById("demo").innerHTML = "hello world " + element[0].innerHTML 
+// document.getElementById("demo").innerHTML = "hello world " + element[4].innerHTML 
 
 // var para = document.getElementsByClassName("p1");
-// console.log(para[3])
-
+// console.log(para[2])
 
 // function insertTag(){
 //     var heading = document.createElement("h1");
@@ -33,19 +28,16 @@
 // }
 
 
-
-
-
-function changeImage(){
-    var img = document.getElementById('image');
-    img.style.width = "500px";
-    img.src = "https://img.freepik.com/free-vector/modern-blue-urban-adventure-suv-vehicle-illustration_1344-205.jpg?w=2000";
-    console.log(img)
- }
+// function changeImage(){
+//     var img = document.getElementById('image');
+//     img.style.width = "500px";
+//     img.src = "https://img.freepik.com/free-vector/modern-blue-urban-adventure-suv-vehicle-illustration_1344-205.jpg?w=2000";
+//     console.log(img)
+//  }
  
  
- function changeImage2(){
-    var img = document.getElementById('image');
-    img.src = "https://i.gaw.to/content/photos/56/76/567681-lamborghini-revuelto-une-nouvelle-bombe-hybride-de-1001-chevaux.jpeg";
-    console.log(img)
- }
+//  function changeImage2(){
+//     var img = document.getElementById('image');
+//     img.src = "https://i.gaw.to/content/photos/56/76/567681-lamborghini-revuelto-une-nouvelle-bombe-hybride-de-1001-chevaux.jpeg";
+//     console.log(img)
+//  }
