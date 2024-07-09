@@ -3,7 +3,7 @@
 $server="localhost";
 $username="root";
 $dbpass="";
-$dbname="2306c2";
+$dbname="2309b2";
 
 $connection=mysqli_connect($server,$username,$dbpass,$dbname);
 if(!$connection){
