@@ -10,5 +10,11 @@
     <a href="/abc">About Page</a><br>
     <a href="/service">Service Page</a>
     <p>Controller Example</p>
+
+    
+    @if(12>2)
+    <h2>User Name is {{$username}} and user age is {{$userage}}</h2>
+    @endif
+
 </body>
 </html>
