@@ -89,17 +89,138 @@ console.log("Hello in Typescript!!");
 //   stdExamStatus: true,
 // };
 
-let mixedDT: (string | number) [];
+// let mixedDT: (string | number) [];
 
-mixedDT = ["Apple", "Grapes", "Banana", 89, 110, 90];
+// mixedDT = ["Apple", "Grapes", "Banana", 89, 110, 90];
 
-mixedDT.forEach((e) => {
-  if(typeof e == "string"){
-    console.log(e.toUpperCase())
-  }else{
-    console.log(e.toFixed(2))
-  }
-})
+// mixedDT.forEach((e) => {
+//   if(typeof e == "string"){
+//     console.log(e.toUpperCase())
+//   }else{
+//     console.log(e.toFixed(2))
+//   }
+// })
+
+// let Teacher: {name: string, exp: number} = {
+//   name: "Haris Naseer",
+//   exp: 3
+// }
+
+// // Aliased Object Type
+// type Student = {
+//   sName: string,
+//   age?: number
+// }
+
+// let stds: Student = {
+//   sName: "Hanzala",
+//   age: 25
+// }
+
+// console.log(stds["sName"])
+// console.log(stds.age)
+
+// interface Manager {
+//   name: string,
+//   salary?: number
+// }
+
+// let bankManager: Manager = {
+//   name: "Taha Hassan",
+//   salary: 230000
+// }
+
+// let storeManager: Manager = {
+//   name: "Hassan Abbas",
+//   salary: 23030
+// }
+
+// interface Student {
+//   stdId: number,
+//   stdName: string
+// }
+
+// interface Teacher {
+//   tId: number,
+//   tName: string
+// }
+
+// type intersected_type = Student & Teacher;
+
+// let mixObj: intersected_type = {
+//   stdId: 23,
+//   stdName: "Luqman",
+//   tId: 12,
+//   tName: "Owais"
+// }
+
+// console.log(mixObj.stdName)
+// console.log(mixObj.tName)
+
+// Tuples
+
+// let tuple: [number, string] = [101, "Javeria"]
+// let scndEle = tuple[1];
+// console.log(scndEle)
+// // console.log(tuple[1])
+
+// // IN JS
+// const failingResponse = ["Not Found", 404];
+
+// // In TS
+
+// const passingResponse: [string, number] = ["{}", 200]
+
+// if(passingResponse[1] === 200){
+//   let data = JSON.parse(passingResponse[0])
+//   console.log(data)
+// }
+
+type staffAcc = [number, string, string, string?]
+
+const staff: staffAcc[] = [
+  [0, "Hassan Shehzad", "hassam@aptechnorth.edu.pk", "CAH"],
+  [1, "Owias", "owais@aptechnorth.edu.pk", "Senior Faculty Member"],
+  [2, "Haris", "haris@aptechnorth.edu.pk", "Senior Faculty Member"],
+  [3, "Afzal", "afzal@aptechnorth.edu.pk"],
+  [4, "Osama", "osama@aptechnorth.edu.pk"]
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
