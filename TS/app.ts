@@ -176,43 +176,52 @@ console.log("Hello in Typescript!!");
 //   console.log(data)
 // }
 
-type staffAcc = [number, string, string, string?]
+// type staffAcc = [number, string, string, string?]
 
-const staff: staffAcc[] = [
-  [0, "Hassan Shehzad", "hassam@aptechnorth.edu.pk", "CAH"],
-  [1, "Owias", "owais@aptechnorth.edu.pk", "Senior Faculty Member"],
-  [2, "Haris", "haris@aptechnorth.edu.pk", "Senior Faculty Member"],
-  [3, "Afzal", "afzal@aptechnorth.edu.pk"],
-  [4, "Osama", "osama@aptechnorth.edu.pk"]
-]
-
-
+// const staff: staffAcc[] = [
+//   [0, "Hassan Shehzad", "hassam@aptechnorth.edu.pk", "CAH"],
+//   [1, "Owias", "owais@aptechnorth.edu.pk", "Senior Faculty Member"],
+//   [2, "Haris", "haris@aptechnorth.edu.pk", "Senior Faculty Member"],
+//   [3, "Afzal", "afzal@aptechnorth.edu.pk"],
+//   [4, "Osama", "osama@aptechnorth.edu.pk"]
+// ]
 
 
+// type PayStubs = [staffAcc, ...number[]];
+
+// const payStubs: PayStubs[] = [
+//   [staff[0], 350],
+//   [staff[1], 400, 500],
+//   [staff[2], 400, 500, 600],
+//   [staff[3], 200, 450, 800, 750],
+//   [staff[4], 400, 500, 600],
+// ]
+
+// let monthOnePayStubs: number =   payStubs[0][1] + payStubs[1][1] + payStubs[2][1] + payStubs[3][1] + payStubs[4][1];
+// let monthTwoPayStubs: number =   payStubs[1][2] + payStubs[2][2] + payStubs[3][2] + payStubs[4][2];
+
+// console.log(monthOnePayStubs)
+// console.log(monthTwoPayStubs)
 
 
+// enum
 
+// enum Colors {Blue, Red, Green}
 
+// const c: Colors = Colors.Red;
 
+// console.log(c)
 
+// enum Colors1 {Blue = 1, Red, Green}
 
+// const color: string = Colors1[3];  
 
+// console.log(color)
 
+// enum Cars {City = 8, BMW = 16, Civic = 23, Accord = 7, Mehran = 1}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const car: string = Cars[7];
+// console.log(car)
 
 
 
