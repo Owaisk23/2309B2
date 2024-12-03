@@ -99,8 +99,61 @@ SELECT CITY, MAX(salary) as MAX_Salary FROM Employee GROUP BY city;
 
 SELECT CITY, SUM(salary) as TOTAL_Salary FROM Employee GROUP BY city;
 
+-- having
+SELECT designation, COUNT(empId) as workers FROM Employee GROUP BY designation
+having designation = 'Angular Developer';
 
+CREATE TABLE Departments(
+	deptId int PRIMARY KEY identity(1,1),
+	deptName nvarchar(50) NOT NULL
+);
 
+INSERT INTO Departments VALUES ('Admin'), ('Development Team'), ('Tech Support'), ('HR'), ('SQAs'); 
 
+select * from Employee;
 
+truncate table Employee;
 
+DROP table Employee;
+
+CREATE TABLE Employee(
+	empId int PRIMARY KEY identity(1,1),
+	empName varchar(255) NOT NULL,
+	designation varchar(255) NOT NULL,
+	salary int NOT NULL,
+	city varchar(70) NOT NULL,
+	deptId int,
+	FOREIGN KEY (deptId) REFERENCES Departments(deptId)
+);
+
+INSERT INTO Employee(empName, designation, salary, city, deptId) VALUES 
+('Ayan', 'MERN Developer', 230000, 'Khi', 2),
+('Taha', 'Flutter Developer', 30000, 'Lhr', 2),
+('Rayyan', 'Network Head', 30000, 'Lhr', 3),
+('Talha', 'Admin Head', 30000, 'Lhr', 1),
+('Ahsan', 'HR Assistant', 130000, 'Isb', 4),
+('Luqman', 'Flutter Developer', 30000, 'Lhr', 2),
+('Huzaifa', 'Python Developer', 67000, 'Khi', 2),
+('Sami', 'DotNET Developer', 130000, 'Isb', 2),
+('Hassan', 'HR Head', 57000, 'Lhr', 4),
+('Fiza', 'Laravel Developer', 57000, 'Lhr', 2),
+('Usman', 'Admin', 57000, 'Lhr', 1),
+('Hussain', 'Angular Developer', 73000, 'Isb', 2);
+
+INSERT INTO Employee(empName, designation, salary, city, deptId) VALUES 
+('Rizwan', 'Network Assistant', 230000, 'Khi', Null),
+('Qadir', 'Admin Assistant', 30000, 'Lhr', Null);
+
+--INNER JOIN
+
+SELECT * FROM Employee as emp INNER JOIN Departments as d on emp.deptId = d.deptId;
+
+-- LEFT JOIN
+SELECT * FROM Employee as emp LEFT JOIN Departments as d on emp.deptId = d.deptId;
+
+SELECT * FROM Departments as d LEFT JOIN Employee as emp on d.deptId = emp.deptId;
+-- RIGHT JOIN
+SELECT * FROM Employee as emp RIGHT JOIN Departments as d on emp.deptId = d.deptId;
+
+-- FULL OUTER JOIN
+SELECT emp.*, d.deptName FROM Employee as emp FULL OUTER JOIN Departments as d on emp.deptId = d.deptId;
