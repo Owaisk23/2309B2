@@ -180,3 +180,31 @@ AS
 SELECT emp.empName, emp.designation, d.deptName FROM Employee as emp INNER JOIN Departments as d on emp.deptId = d.deptId;
 
 SELECT * FROM empDetailwithDept;
+
+--DCL DATA CONTROL LANGUAGE
+
+SELECT * FROM sys.sql_logins;
+
+CREATE LOGIN DEV_EMP WITH Password = '555';
+CREATE USER DEV_EMP FROM LOGIN DEV_EMP;
+
+SELECT * FROM Employee;
+
+-- GRANT
+
+GRANT SELECT on dbo.Employee To DEV_EMP;
+GRANT DELETE, UPDATE on dbo.Employee To DEV_EMP;
+
+GRANT INSERT on dbo.Employee TO DEV_EMP;
+
+REVOKE DELETE on dbo.Employee to DEV_EMP;
+
+
+
+
+
+
+
+
+
+
