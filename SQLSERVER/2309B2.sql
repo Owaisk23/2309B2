@@ -200,6 +200,40 @@ GRANT INSERT on dbo.Employee TO DEV_EMP;
 REVOKE DELETE on dbo.Employee to DEV_EMP;
 
 
+-- Stored Procedure
+
+CREATE PROCEDURE SeeEmp
+AS
+BEGIN
+SELECT * FROM Employee
+END;
+
+
+SeeEmp;
+
+ALTER PROCEDURE SeeEmp
+AS
+BEGIN
+SELECT * FROM Employee where city = 'Khi'
+END;
+
+SeeEmp;
+
+CREATE PROCEDURE AddEmp @eName varchar(255), @desig varchar(100), @sal int, @city varchar(60), @dptId int
+AS
+BEGIN
+INSERT INTO Employee VALUES (@eName, @desig,@sal, @city, @dptId)
+SELECT * FROM Employee
+END;
+
+AddEmp @eName = 'Owais', @desig = 'Software Developer', @sal = 45000, @city = 'Khi', @dptId = 2;
+
+AddEmp @eName = 'Sajida', @desig = 'DotNet Developer', @sal = 145000, @city = 'Hyd', @dptId = 2;
+
+
+
+
+
 
 
 
