@@ -277,18 +277,20 @@ SELECT * FROM inserted;
  SELECT * FROM EmpLogs;
 
 
- SELECT * into Test from Employees;
+ SELECT * into Test from Employee;
  SELECT * From Test;
+ 
+ DROP trigger AddEmp_trigger;
 
  -- Maintaining logs on tables
 
   create TRIGGER AddEmp_trigger 
- On Employees
+ On Employee
  AFTER INSERT
  as
  BEGIN
 DECLARE @Id int, @name varchar(50)
-SELECT @Id=id, @name=empName FROM inserted
+SELECT @Id=empId, @name=empName FROM inserted
 INSERT INTO EmpLogs VALUES(@name+' having Id = '+ CAST(@Id as varchar(6)) +' is added at '+ cast(GETDATE() as varchar(30)))
  END;
 
@@ -305,16 +307,16 @@ INSERT INTO EmpLogs VALUES(@name+' having Id = '+ CAST(@Id as varchar(6)) +' is 
  AS
  BEGIN
  DECLARE @ID int
- SELECT @ID=id from Deleted
- Update Employee set emp_status=0 where id=@ID
+ SELECT @ID=empId from Deleted
+ Update Employee set emp_status=0 where empId=@ID
  END;
 
- DELETE from Employee where id=15;
+ DELETE from Employee where empId=3;
 
 
  -- Update Trigger
- ALTER Trigger Update_Employees
- On Employees
+ Create Trigger Update_Employee
+ On Employee
  for Update
  as
  begin
@@ -327,10 +329,10 @@ DECLARE @Newcity varchar(60), @Oldcity varchar(60)
 DECLARE @AuditString varchar(255)
 
 SELECT * into #Temptable from inserted
-WHILE(exists (SELECT id from #Temptable))
+WHILE(exists (SELECT empId from #Temptable))
 begin
-SELECT @Id=id, @Newname=empName, @Newsalary=salary, @NewDesignation=designation,@Newcity=city,@Newdeptid=deptId FROM #Temptable
-SELECT  @Oldname=empName, @Oldsalary=salary, @OldDesignation=designation,@Oldcity=city,@Olddeptid=deptId FROM deleted where id=@Id
+SELECT @Id=empId, @Newname=empName, @Newsalary=salary, @NewDesignation=designation,@Newcity=city,@Newdeptid=deptId FROM #Temptable
+SELECT  @Oldname=empName, @Oldsalary=salary, @OldDesignation=designation,@Oldcity=city,@Olddeptid=deptId FROM deleted where empId=@Id
 SET @AuditString =''
 SET @AuditString ='An employee having id = '+ CAST(@Id as varchar(6))+' on '+  CAST(GETDATE() as varchar(30))+' is changed '
 if(@Oldname <> @Newname)
@@ -348,13 +350,13 @@ SET @AuditString = @AuditString + ' its city from '+@Oldcity +' to '+ @Newcity
 if(@Olddeptid <> @Newdeptid)
 SET @AuditString = @AuditString + ' its deptid from '+CAST(@Olddeptid as varchar(10)) +' to '+CAST(@Newdeptid as varchar(10))
  Insert into Emplogs values(@AuditString)
- DELETE FROM #Temptable where id=@Id
+ DELETE FROM #Temptable where empId=@Id
 end
  end;
 
 
- select * from Employees;
- update Employees set city='karachi' where id > 4;
+ select * from Employee;
+ update Employee set city='karachi' where empId > 4;
  select * from Emplogs;
 
  -- Transactions 
