@@ -9,60 +9,184 @@ Console.WriteLine("Hello, World!");
 
 //DATATYPES
 //NUMBERS
-byte age = 26;
+//byte age = 26;
 
-short salary = 26000;
+//short salary = 26000;
 
-int price = 2147483647;
+//int price = 2147483647;
 
-long largeNum = 4836472147483647L;
+//long largeNum = 4836472147483647L;
 
-float deciNum = 75.35F;
+//float deciNum = 75.35F;
 
-double num = 123.654D;
+//double num = 123.654D;
 
-decimal price2 = 75999.255M; 
+//decimal price2 = 75999.255M; 
 
-//STRING
+////STRING
 
-char alpha = 'A';
+//char alpha = 'A';
 
-string car = "Supra";
+//string car = "Supra";
 
-bool isAffordable = false;
+//bool isAffordable = false;
 
-Console.WriteLine("Age is " + age + "\nSalary is " + salary + "\nPrice is " + price
-    + "\nLarge Number is " + largeNum + "\nDeci Number is " + deciNum + "\nDouble Num is "
-    + num + "\nPrice2 is " + price2 + "\nCharacter is " + alpha + "\nString is " + car
-    + "\nBool is isAffordable " + isAffordable);
+//Console.WriteLine("Age is " + age + "\nSalary is " + salary + "\nPrice is " + price
+//    + "\nLarge Number is " + largeNum + "\nDeci Number is " + deciNum + "\nDouble Num is "
+//    + num + "\nPrice2 is " + price2 + "\nCharacter is " + alpha + "\nString is " + car
+//    + "\nBool is isAffordable " + isAffordable);
 
-//Arithmatic Operator
+////Arithmatic Operator
 
-Console.WriteLine(77 + 90);
-Console.WriteLine(717 - 90);
-Console.WriteLine(77 * 90);
-Console.WriteLine(100 / 100);
-Console.WriteLine(5 % 2);
+//Console.WriteLine(77 + 90);
+//Console.WriteLine(717 - 90);
+//Console.WriteLine(77 * 90);
+//Console.WriteLine(100 / 100);
+//Console.WriteLine(5 % 2);
 
-// SHORTCUT 
+//// SHORTCUT 
 
-int number = 10;
+//int number = 10;
 
-Console.WriteLine(number += 5); //number = number + 5 
-Console.WriteLine(number -= 5); //number = number + 5 
-Console.WriteLine(number *= 5); //number = number + 5 
-Console.WriteLine(number /= 5); //number = number + 5
+//Console.WriteLine(number += 5); //number = number + 5 
+//Console.WriteLine(number -= 5); //number = number + 5 
+//Console.WriteLine(number *= 5); //number = number + 5 
+//Console.WriteLine(number /= 5); //number = number + 5
 
-//COMPARISION Operator
+////COMPARISION Operator
 
-int num1 = 50; int num2 = 70;
+//int num1 = 50; int num2 = 70;
 
-Console.WriteLine(num1 == num2);//F
-Console.WriteLine(num1 >= num2);//F
-Console.WriteLine(num1 <= num2);//T
-Console.WriteLine(num1 != num2);//T
-Console.WriteLine(num1 < num2);//T
-Console.WriteLine(num1 > num2);//F
+//Console.WriteLine(num1 == num2);//F
+//Console.WriteLine(num1 >= num2);//F
+//Console.WriteLine(num1 <= num2);//T
+//Console.WriteLine(num1 != num2);//T
+//Console.WriteLine(num1 < num2);//T
+//Console.WriteLine(num1 > num2);//F
+
+//LOGICAL OPERATOR
+//int a = 35, b = 75;
+
+//////AND &&
+////Console.WriteLine(a >= b && a <= b);
+//////                  F           T
+////Console.WriteLine(a <= b && a < b);
+
+////OR ||
+//Console.WriteLine(a >= b || a <= b);
+////                  F           T
+//Console.WriteLine(a >= b || a == b);
+
+////NOT !
+//Console.WriteLine(!(a == b));
+
+//CONDITIONAL STATEMENTS
+
+//Console.WriteLine("Enter Salary..");
+
+//int salary = Int32.Parse(Console.ReadLine());
+
+//if(salary > 50000 && !(salary >= 80000))
+//{
+//    Console.WriteLine("Good salary...");
+//}
+//else if(salary < 50000)
+//{
+//    Console.WriteLine("Do you get fuel allowance?");
+//    string answer = Console.ReadLine();
+
+//    answer = answer.ToLower();// yes  or y
+
+//    if (answer == "yes" || answer == "y")
+//    {
+//        Console.WriteLine("Sounds Goood!!");
+//    }
+//    else if (answer == "no" || answer == "n")
+//    {
+//        Console.WriteLine("Try to switch your job ASAP!!");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Please enter yes or no.");    
+//    }
+//}
+//else
+//{
+//    Console.WriteLine("Great!! MASHALLAH");
+//}
+// SWITCH CASE
+
+//Console.WriteLine("Enter number to find Day b/w 1 to 7.");
+//int num = Convert.ToInt32(Console.ReadLine());
+
+//switch (num)
+//{
+//    case 1:
+//        Console.WriteLine("Monday");
+//        break;    
+//    case 2:
+//        Console.WriteLine("Tuesday");
+//        break;
+//    case 3:
+//        Console.WriteLine("Wednesday");
+//        break;
+//    case 4:
+//        Console.WriteLine("Thursday");
+//        break;
+//    case 5:
+//        Console.WriteLine("Friday");
+//        break;
+//    case 6:
+//        Console.WriteLine("Saturday");
+//        break;
+//    case 7:
+//        Console.WriteLine("Sunday");
+//        break;
+//    default:
+//        Console.WriteLine("Chutti Day");
+//        break;
+
+//}
+
+//STRING INTERPOLATION
+
+int number = 55;
+
+Console.WriteLine($"This is string interpolation. {105 + number}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
