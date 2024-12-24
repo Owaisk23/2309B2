@@ -150,9 +150,95 @@ Console.WriteLine("Hello, World!");
 
 //STRING INTERPOLATION
 
-int number = 55;
+//int number = 55;
 
-Console.WriteLine($"This is string interpolation. {105 + number}");
+//Console.WriteLine($"This is string interpolation. {105 + number}");
+
+//FOR LOOP
+
+//for(int i = 1; i <= 10; i++)
+//{
+//    Console.WriteLine(i);
+//}
+
+
+//for (int i = 1; i <= 101; i++)
+//{
+//    if(i % 2 != 0)
+//    {
+//        Console.WriteLine(i);
+
+//    }
+//}
+
+//WHILE LOOP
+
+//int x = 5;
+
+//while(x <= 50)
+//{
+//    Console.WriteLine("K");
+//    x++;
+//}
+
+int y = 46;
+
+do
+{
+    Console.WriteLine("Y");
+    y++;
+}
+while (y <= 45);
+
+//EVEN ODD NUMBER
+
+int num;
+char ans;
+
+do
+{
+    Console.WriteLine("Enter any number.");
+    num = Convert.ToInt32(Console.ReadLine());
+
+    if(num % 2 == 0)
+    {
+        Console.WriteLine("Even Number");
+    }
+    else
+    {
+        Console.WriteLine("Odd Number");
+    }
+    Console.WriteLine("Do you want to continue? Press Y");
+    ans = Convert.ToChar(Console.ReadLine());
+
+} while (ans == 'Y' || ans == 'y');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
