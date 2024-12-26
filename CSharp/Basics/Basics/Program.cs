@@ -181,37 +181,104 @@ Console.WriteLine("Hello, World!");
 //    x++;
 //}
 
-int y = 46;
+//int y = 46;
 
-do
-{
-    Console.WriteLine("Y");
-    y++;
-}
-while (y <= 45);
+//do
+//{
+//    Console.WriteLine("Y");
+//    y++;
+//}
+//while (y <= 45);
 
 //EVEN ODD NUMBER
 
-int num;
-char ans;
+//int num;
+//char ans;
 
-do
+//do
+//{
+//    Console.WriteLine("Enter any number.");
+//    num = Convert.ToInt32(Console.ReadLine());
+
+//    if(num % 2 == 0)
+//    {
+//        Console.WriteLine("Even Number");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Odd Number");
+//    }
+//    Console.WriteLine("Do you want to continue? Press Y");
+//    ans = Convert.ToChar(Console.ReadLine());
+
+//} while (ans == 'Y' || ans == 'y');
+
+
+// ARRAY WITH FIXED SIZE
+
+//int[] numbers = new int[5];
+
+//numbers[0] = 23;
+//numbers[1] = 13;
+//numbers[2] = 33;
+//numbers[3] = 43;
+//numbers[4] = 53;
+
+//Console.WriteLine(numbers[4]);
+////Console.WriteLine(numbers[5]);
+
+//int[] itemPrice = { 45, 77, 80, 90, 55 };
+
+//foreach (var item in itemPrice)
+//{
+//    Console.WriteLine(item);
+//}
+
+//string[] countries = { "Pakistan", "Iran", "Iraq", "Pakistan" ,"China", "India", "Afghanistan","Pakistan" };
+
+
+////Array.Sort(countries);
+//Array.Reverse(countries);
+
+//foreach (var country in countries)
+//{
+//    Console.WriteLine(country);
+//};
+
+
+//Console.WriteLine(Array.IndexOf(countries, "India"));
+//Console.WriteLine(Array.LastIndexOf(countries, "Pakistan"));
+
+//MultiDimentional Array
+
+int[,] OldNewPrices =
 {
-    Console.WriteLine("Enter any number.");
-    num = Convert.ToInt32(Console.ReadLine());
+    {77, 100 },
+    //00   01
+    {110, 220 },
+//    10   11  
+    {750, 800 },
+    //20    21
+    {707, 1000 },
+    {257, 430 },
+    {177, 300 },
+    {77, 100 }
+};
 
-    if(num % 2 == 0)
-    {
-        Console.WriteLine("Even Number");
-    }
-    else
-    {
-        Console.WriteLine("Odd Number");
-    }
-    Console.WriteLine("Do you want to continue? Press Y");
-    ans = Convert.ToChar(Console.ReadLine());
+//Console.WriteLine(OldNewPrices[2, 1]);
 
-} while (ans == 'Y' || ans == 'y');
+
+for (int i = 0; i < OldNewPrices.GetLength(0); i++)
+{
+    for (int j = 0; j < OldNewPrices.GetLength(1); j++)
+    {
+        Console.WriteLine(OldNewPrices[i, j]);
+    }
+}
+
+
+
+
 
 
 
