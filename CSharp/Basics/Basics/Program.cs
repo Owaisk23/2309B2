@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
+
 Console.WriteLine("Hello, World!");
 
 //string firstname = "luqman";
@@ -251,30 +253,125 @@ Console.WriteLine("Hello, World!");
 
 //MultiDimentional Array
 
-int[,] OldNewPrices =
+//int[,] OldNewPrices =
+//{
+//    {77, 100 },
+//    //00   01
+//    {110, 220 },
+////    10   11  
+//    {750, 800 },
+//    //20    21
+//    {707, 1000 },
+//    {257, 430 },
+//    {177, 300 },
+//    {77, 100 }
+//};
+
+////Console.WriteLine(OldNewPrices[2, 1]);
+
+
+//for (int i = 0; i < OldNewPrices.GetLength(0); i++)
+//{
+//    for (int j = 0; j < OldNewPrices.GetLength(1); j++)
+//    {
+//        Console.WriteLine(OldNewPrices[i, j]);
+//    }
+//}
+
+//JAGGED ARRAY
+//string[][] skillSet =
+//{
+//    new string[3] {"Html", "CSS", "Javascript"},
+//    new string[5] {"ES6", "MySQL", "PHP", "LARAVEL", "Freelancing"},
+//    new string[2] {"SQL SERVER", "DotNET"}
+//};
+
+
+//Console.WriteLine(skillSet[1][4]);
+
+//for(int i = 0; i < skillSet.Length; i++)
+//{
+//    for(int j = 0; j < skillSet[i].Length; j++)
+//    {
+//        Console.WriteLine($"Elements in JaggedArray[{i}, {j}] = {skillSet[i][j]}");
+//    }
+//}
+
+//foreach (var skills in skillSet)
+//{
+//    foreach (var skill in skills)
+//    {
+//        Console.WriteLine(skill);
+//    }
+//}
+
+//FUNCTIONS
+
+//NO PARAMETERS,NO RETURN
+
+//void Greet()
+//{
+//    Console.WriteLine("Welcome! In our company..!!");
+//}
+
+////calling
+//Greet();
+
+////With PARAMETERS,NO RETURN
+
+//void GreetUser(string uname)
+//{
+//    Console.WriteLine($"Welcome {uname}! In our company..!!");
+//}
+
+////calling
+//GreetUser("Luqman");
+//GreetUser("Sami");
+//GreetUser("Ayan");
+//GreetUser("Hanzala");
+//GreetUser("Daniyal");
+
+
+//NO PARAMETER, RETURN TYPE
+
+string Greet()
 {
-    {77, 100 },
-    //00   01
-    {110, 220 },
-//    10   11  
-    {750, 800 },
-    //20    21
-    {707, 1000 },
-    {257, 430 },
-    {177, 300 },
-    {77, 100 }
-};
-
-//Console.WriteLine(OldNewPrices[2, 1]);
-
-
-for (int i = 0; i < OldNewPrices.GetLength(0); i++)
-{
-    for (int j = 0; j < OldNewPrices.GetLength(1); j++)
-    {
-        Console.WriteLine(OldNewPrices[i, j]);
-    }
+    return "Welcome! In our company..!!";
 }
+
+//Greet();
+//Console.WriteLine(Greet());
+
+string messg = Greet();
+
+Console.WriteLine(messg);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
