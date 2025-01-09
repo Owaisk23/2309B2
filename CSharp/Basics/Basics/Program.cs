@@ -508,25 +508,25 @@ Console.WriteLine("Hello, World!");
 
 //ArrayList (None-Generic Collection & No fix datatype)
 
-ArrayList Cars = new ArrayList();
-Cars.Add("Revo");
-Cars.Add("Camery");
-Cars.Add("Civic");
-Cars.Add("Elantra");
-Cars.Add("Mehran");
-Cars.Add(24007);
-Cars.Add(.70f);
+//ArrayList Cars = new ArrayList();
+//Cars.Add("Revo");
+//Cars.Add("Camery");
+//Cars.Add("Civic");
+//Cars.Add("Elantra");
+//Cars.Add("Mehran");
+//Cars.Add(24007);
+//Cars.Add(.70f);
 
-//Console.WriteLine(Cars.Count);
-//Console.WriteLine(Cars.Contains("Mehran"));
-//Cars.RemoveAt(3);
-//Cars.Remove("Revo");
-//Cars.RemoveRange(5, 2);
+////Console.WriteLine(Cars.Count);
+////Console.WriteLine(Cars.Contains("Mehran"));
+////Cars.RemoveAt(3);
+////Cars.Remove("Revo");
+////Cars.RemoveRange(5, 2);
 
-foreach (var car in Cars)
-{
-    Console.WriteLine(car);
-}
+//foreach (var car in Cars)
+//{
+//    Console.WriteLine(car);
+//}
 
 
 
@@ -538,10 +538,54 @@ foreach (var car in Cars)
 
 //string test = "we are  Learnnig \"C#\"";
 ////Console.WriteLine(test);
-//Console.WriteLine(test.Replace("Learnnig", "Mastering"));
+////Console.WriteLine(test.Replace("Learnnig", "Mastering"));
 //Console.WriteLine(test.Replace("C#", "Java"));
+//Objects
+Aeroplane WestlandLemo = new Aeroplane(); //Default Constructor
+Console.WriteLine(WestlandLemo.AirLine);
+WestlandLemo.Name = "Westland limo";
+WestlandLemo.takeOff();
 
+//Paramterized Constructor
+Aeroplane f16 = new Aeroplane("PAF");
+f16.Landing();
 
+public class Aeroplane
+{
+    public string? AirLine;
+    public string? Name;
+    public int Seats;
+    public int Crew;
+    public string? Power;
+
+    //Constructors
+    public Aeroplane()
+    {
+        this.AirLine = "Not Specified";
+        this.Name = "unknown";
+        this.Seats = 0;
+        this.Crew = 0;
+        this.Power = null;
+    }    
+    //Parameterized Constructors
+    public Aeroplane(string Airline)
+    {
+        this.AirLine = Airline;
+        this.Name = "unknown";
+        this.Seats = 0;
+        this.Crew = 0;
+        this.Power = null;
+    }
+
+    public void takeOff()
+    {
+        Console.WriteLine($"{this.Name} is taking Off From 2nd run way.. Best Wishes!!");
+    }
+    public void Landing()
+    {
+        Console.WriteLine($"{this.AirLine} is Landing at 4th run way.. ! ");
+    }
+}
 
 
 
