@@ -541,52 +541,201 @@ Console.WriteLine("Hello, World!");
 ////Console.WriteLine(test.Replace("Learnnig", "Mastering"));
 //Console.WriteLine(test.Replace("C#", "Java"));
 //Objects
-Aeroplane WestlandLemo = new Aeroplane(); //Default Constructor
-Console.WriteLine(WestlandLemo.AirLine);
-WestlandLemo.Name = "Westland limo";
-WestlandLemo.takeOff();
+//Aeroplane WestlandLemo = new Aeroplane(); //Default Constructor
+//Console.WriteLine(WestlandLemo.AirLine);
+//WestlandLemo.Name = "Westland limo";
+//WestlandLemo.takeOff();
 
-//Paramterized Constructor
-Aeroplane f16 = new Aeroplane("PAF");
-f16.Landing();
+////Paramterized Constructor
+//Aeroplane f16 = new Aeroplane("PAF");
+//f16.Landing();
 
-public class Aeroplane
+//Aeroplane f17 = new Aeroplane("PAF", "F-17 Thunder", 2, 2, "8500hp");
+//f17.takeOff();
+//Console.WriteLine(f17.Power);
+////f17.land();
+
+//public class Aeroplane
+//{
+//    public string? AirLine;
+//    public string? Name;
+//    public int Seats;
+//    public int Crew;
+//    public string? Power;
+
+//    //Constructors
+//    public Aeroplane()
+//    {
+//        this.AirLine = "Not Specified";
+//        this.Name = "unknown";
+//        this.Seats = 0;
+//        this.Crew = 0;
+//        this.Power = null;
+//    }    
+//    //Parameterized Constructors
+//    public Aeroplane(string Airline)
+//    {
+//        this.AirLine = Airline;
+//        this.Name = "unknown";
+//        this.Seats = 0;
+//        this.Crew = 0;
+//        this.Power = null;
+//    }
+
+//    //    //    //Paremeterized constructor (Overloading)
+//    public Aeroplane(string ALine, string name, int seat, int crew, string pow)
+//    {
+//        this.AirLine = ALine;
+//        this.Name = name;
+//        this.Seats = seat;
+//        this.Crew = crew;
+//        this.Power = pow;
+//    }
+
+//    public void takeOff()
+//    {
+//        Console.WriteLine($"{this.Name} is taking Off From 2nd run way.. Best Wishes!!");
+//    }
+//    public void Landing()
+//    {
+//        Console.WriteLine($"{this.AirLine} is Landing at 4th run way.. ! ");
+//    }
+//}
+
+
+//OOP (OBJECT ORIENTED PROGRAMMING)
+//it is an approach to code cleaner and better.
+//readable
+//reusable
+//optimize
+//proper structure of the code is maintained.
+
+//Main Pillars of OOP
+
+//1. Interitance
+// i . Single level inheritance  Vehicle -> Car
+// ii . Multi level inheritance  Vehicle -> Car -> Ecar
+// iii. Heirarchical inheritance Vehicle ->Car , Vehicle-> Bike
+// iv. Multiple inheritance  
+// v. Hybrid inheritance    Vehicle -> CAR , Vehicle -> Car -> Ecar, Car-> Ecar
+
+//2. Polymorphism
+// Method Overloading
+// Method Overriding
+//3. Abstraction
+//4. Encapsulation
+
+//Inheritance
+//Vehicle abc = new Vehicle("AAZ-789", "Metallic grey");
+//abc.Run();
+
+//Car mercedez = new Car("TZ-8908", "Black", "Mercedez", "Benz C-Class", 20000000);
+////mercedez.Run();
+//mercedez.Run(500);
+
+//////// Parent class | Base Class | Super Class
+//public class Vehicle
+//{
+//    public string regNo;
+//    public string color;
+
+//    public Vehicle(string regno, string color)
+//    {
+//        this.regNo = regno;
+//        this.color = color;
+//    }
+//    public void Run()
+//    {
+//        Console.WriteLine($"{this.regNo} vehicle started running");
+//    }
+//}
+////// Child class | Derived Class | Sub Class
+//public class Car : Vehicle
+//{
+//    public string brand;
+//    public string model;
+//    public int price;
+
+//    public Car(string regno, string color, string brand, string model, int price)
+//        : base(regno, color)
+//    {
+//        this.brand = brand;
+//        this.model = model;
+//        this.price = price;
+//    }
+
+//    //method overriding
+//    public void Run()
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running");
+//    }
+//    //method overloading
+//    public void Run(int speed)
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running at {speed} " +
+//            $"MPH.");
+//    }
+
+//}
+
+//Access  Modifiers
+//1. Public     | anyone can access from any where in the program.
+//2. Private    | only owner class can access .
+//3. Protected  | only owner class and child class can access .
+
+//Products neckBand = new Products(1500, "Lenovo Neckband" ,"good quality product with extra base and long range connectivity.");
+////neckBand.name="Lenovo Neckband";
+////neckBand.price;
+////neckBand.description;
+////Console.WriteLine(neckBand.price);
+
+////neckBand.showPrice();
+//neckBand.callShowPrice();
+
+//Gadgets iphone = new Gadgets(230000, "iphone 15 pro max", "acha phone ha", "phones");
+//iphone.ShowGadget();
+
+public class Products
 {
-    public string? AirLine;
-    public string? Name;
-    public int Seats;
-    public int Crew;
-    public string? Power;
+    public string name;
+    private int price;
+    protected string description;
 
-    //Constructors
-    public Aeroplane()
+    public Products(int price, string name, string description)
     {
-        this.AirLine = "Not Specified";
-        this.Name = "unknown";
-        this.Seats = 0;
-        this.Crew = 0;
-        this.Power = null;
-    }    
-    //Parameterized Constructors
-    public Aeroplane(string Airline)
-    {
-        this.AirLine = Airline;
-        this.Name = "unknown";
-        this.Seats = 0;
-        this.Crew = 0;
-        this.Power = null;
+        this.name = name;
+        this.price = price;
+        this.description = description;
     }
 
-    public void takeOff()
+    private void showPrice()
     {
-        Console.WriteLine($"{this.Name} is taking Off From 2nd run way.. Best Wishes!!");
+        Console.WriteLine(this.price);
     }
-    public void Landing()
+    public void callShowPrice()
     {
-        Console.WriteLine($"{this.AirLine} is Landing at 4th run way.. ! ");
+        this.showPrice();
     }
 }
 
+public class Gadgets : Products
+{
+    public string category;
+
+    public Gadgets(int price, string name, string description, string category) : 
+        base(price, name, description)
+    {
+        this.category = category;
+    }
+
+    public void ShowGadget()
+    {
+        Console.WriteLine(this.name);
+        this.callShowPrice();
+        Console.WriteLine(this.description);
+        Console.WriteLine(this.category);
+    }
+}
 
 
 
