@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\firstproject\\firstproject\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|solutionrelative:firstproject\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\firstproject\\firstproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|solutionrelative:firstproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\firstproject\\firstproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|solutionrelative:firstproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\firstproject\\firstproject\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|solutionrelative:firstproject\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\firstproject\\firstproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|solutionrelative:firstproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\firstproject\\firstproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4309FA8-3033-49E2-900F-99D713006BFF}|firstProject\\firstProject.csproj|solutionrelative:firstproject\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "firstProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "firstProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwCQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T05:51:45.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "firstProject\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Home\\About.cshtml*",
+              "RelativeToolTip": "firstProject\\Views\\Home\\About.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T05:51:14.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "firstProject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "firstProject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T05:49:09.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "firstProject\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "firstProject\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T05:48:03.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "firstProject\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "firstProject\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T05:47:31.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactUS.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Home\\ContactUS.cshtml",
+              "RelativeDocumentMoniker": "firstProject\\Views\\Home\\ContactUS.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\firstProject\\firstProject\\Views\\Home\\ContactUS.cshtml",
+              "RelativeToolTip": "firstProject\\Views\\Home\\ContactUS.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-23T04:56:18.545Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
