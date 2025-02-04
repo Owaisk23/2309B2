@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\TempEmbedding\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D63FF8DE-2DC3-4E9F-B1CB-C1291373241F}|TempEmbedding\\TempEmbedding.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\tempembedding\\tempembedding\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D63FF8DE-2DC3-4E9F-B1CB-C1291373241F}|TempEmbedding\\TempEmbedding.csproj|solutionrelative:tempembedding\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63FF8DE-2DC3-4E9F-B1CB-C1291373241F}|TempEmbedding\\TempEmbedding.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\tempembedding\\tempembedding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D63FF8DE-2DC3-4E9F-B1CB-C1291373241F}|TempEmbedding\\TempEmbedding.csproj|solutionrelative:tempembedding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D63FF8DE-2DC3-4E9F-B1CB-C1291373241F}|TempEmbedding\\TempEmbedding.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\tempembedding\\tempembedding\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D63FF8DE-2DC3-4E9F-B1CB-C1291373241F}|TempEmbedding\\TempEmbedding.csproj|solutionrelative:tempembedding\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\TempEmbedding\\TempEmbedding\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TempEmbedding\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\TempEmbedding\\TempEmbedding\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TempEmbedding\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAI4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T05:08:37.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_UserLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\TempEmbedding\\TempEmbedding\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeDocumentMoniker": "TempEmbedding\\Views\\Shared\\_UserLayout.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\TempEmbedding\\TempEmbedding\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeToolTip": "TempEmbedding\\Views\\Shared\\_UserLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T05:03:48.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\TempEmbedding\\TempEmbedding\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TempEmbedding\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\TempEmbedding\\TempEmbedding\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TempEmbedding\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T05:02:49.336Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
