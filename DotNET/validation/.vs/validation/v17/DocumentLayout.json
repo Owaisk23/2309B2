@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\validation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42E06C49-D3A5-4AAF-9A9A-3021FE466BA0}|validation\\validation.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\validation\\validation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42E06C49-D3A5-4AAF-9A9A-3021FE466BA0}|validation\\validation.csproj|solutionrelative:validation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42E06C49-D3A5-4AAF-9A9A-3021FE466BA0}|validation\\validation.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\validation\\validation\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42E06C49-D3A5-4AAF-9A9A-3021FE466BA0}|validation\\validation.csproj|solutionrelative:validation\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42E06C49-D3A5-4AAF-9A9A-3021FE466BA0}|validation\\validation.csproj|c:\\users\\owaisahmed\\onedrive - dawood university of engineering technology\\desktop\\dotnet\\2309b2dotnet\\validation\\validation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42E06C49-D3A5-4AAF-9A9A-3021FE466BA0}|validation\\validation.csproj|solutionrelative:validation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\validation\\validation\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "validation\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\validation\\validation\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "validation\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T05:54:20.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\validation\\validation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "validation\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\validation\\validation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "validation\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T05:36:47.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\validation\\validation\\Models\\Model.cs",
+              "RelativeDocumentMoniker": "validation\\Models\\Model.cs",
+              "ToolTip": "C:\\Users\\owaisahmed\\OneDrive - Dawood University of Engineering Technology\\Desktop\\DOTNET\\2309B2DotNET\\validation\\validation\\Models\\Model.cs",
+              "RelativeToolTip": "validation\\Models\\Model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T05:36:47.326Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
