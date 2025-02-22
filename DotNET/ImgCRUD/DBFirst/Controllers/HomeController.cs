@@ -43,7 +43,7 @@ namespace DBFirst.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Product item, IFormFile file)
         {
-            var imageName = DateTime.Now.ToString("yymmddhhmmss");//24074455454454
+            var imageName = DateTime.Now.ToString("yymmddhhmmss");//25022255454454
             imageName += Path.GetFileName(file.FileName);//24074455454454apple.png
 
             string imagepath = Path.Combine(HttpContext.Request.PathBase.Value, "wwwroot/Uploads");
@@ -56,7 +56,7 @@ namespace DBFirst.Controllers
 
             }
 
-            var dbimage = Path.Combine("/Uploads", imageName);//   /uploads/240715343434apple.png
+            var dbimage = Path.Combine("/Uploads", imageName);//   /uploads/240715343434pixel.png
             item.Image = dbimage;
 
             db.Products.Add(item);
@@ -70,6 +70,7 @@ namespace DBFirst.Controllers
         public IActionResult EditProduct(int id)
         {
             var product = db.Products.FirstOrDefault(x => x.Id == id);
+            ViewBag.CatId = new SelectList(db.Categories, "CatId", "CatName");
             return View(product);
         }
        

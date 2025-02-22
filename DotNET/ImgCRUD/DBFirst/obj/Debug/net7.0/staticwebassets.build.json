@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4kOwtoTMTJ03oGwzh/209QX6ZQtdX/ssKjirbZzb46U=",
+  "Hash": "tehaYaZFjzTDGifvw0W7VGGqnC6jlGm/OAl6vd4Zs9Q=",
   "Source": "DBFirst",
   "BasePath": "_content/DBFirst",
   "Mode": "Default",
@@ -1103,6 +1103,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\242810122843shirt.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\owaisahmed\\Desktop\\2306C2\\DotNet\\ImgCRUD\\DBFirst\\wwwroot\\Uploads\\244112114118abaya.jpg",
+      "SourceId": "DBFirst",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\owaisahmed\\Desktop\\2306C2\\DotNet\\ImgCRUD\\DBFirst\\wwwroot\\",
+      "BasePath": "_content/DBFirst",
+      "RelativePath": "Uploads/244112114118abaya.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\244112114118abaya.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\owaisahmed\\Desktop\\2306C2\\DotNet\\ImgCRUD\\DBFirst\\wwwroot\\Uploads\\244212114210kids.jpg",
+      "SourceId": "DBFirst",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\owaisahmed\\Desktop\\2306C2\\DotNet\\ImgCRUD\\DBFirst\\wwwroot\\",
+      "BasePath": "_content/DBFirst",
+      "RelativePath": "Uploads/244212114210kids.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\244212114210kids.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\owaisahmed\\Desktop\\2306C2\\DotNet\\ImgCRUD\\DBFirst\\wwwroot\\Uploads\\253822093836pixel.jfif",
+      "SourceId": "DBFirst",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\owaisahmed\\Desktop\\2306C2\\DotNet\\ImgCRUD\\DBFirst\\wwwroot\\",
+      "BasePath": "_content/DBFirst",
+      "RelativePath": "Uploads/253822093836pixel.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\253822093836pixel.jfif"
     }
   ]
 }
