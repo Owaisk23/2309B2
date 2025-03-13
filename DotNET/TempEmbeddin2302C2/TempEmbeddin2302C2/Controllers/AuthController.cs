@@ -1,4 +1,6 @@
-﻿using System.Security.Claims;
+﻿using System.Net.Mail;
+using System.Net;
+using System.Security.Claims;
 
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -32,13 +34,18 @@ namespace TempEmbeddin2302C2.Controllers
                 user.Password = hashPassword;
                 db.Users.Add(user);
                 db.SaveChanges();
+                if (SendEmail(user.Email, "Your account has been created Successfully.", "Registeration Success"))
+                {
+                    ViewBag.msg = "Check your Inbox.";
+                }
+
                 return RedirectToAction("Login");
 
             }
             else
             {
-             ViewBag.msg = "User Already registered. Please Login.";
-            return View();
+                ViewBag.msg = "User Already registered. Please Login.";
+                return View();
             }
         }
 
@@ -52,7 +59,7 @@ namespace TempEmbeddin2302C2.Controllers
         public IActionResult Login(User user)
         {
             bool isAuthenticated = false;
-            
+
             ClaimsIdentity identity = null;
             string controller = "";
 
@@ -60,8 +67,8 @@ namespace TempEmbeddin2302C2.Controllers
             if (checkUser != null)
             {
                 var hasher = new PasswordHasher<string>();
-                var verifyPass = hasher.VerifyHashedPassword(user.Email, checkUser.Password ,user.Password);
-                if(verifyPass== PasswordVerificationResult.Success && checkUser.RoleId==1)
+                var verifyPass = hasher.VerifyHashedPassword(user.Email, checkUser.Password, user.Password);
+                if (verifyPass == PasswordVerificationResult.Success && checkUser.RoleId == 1)
                 {
                     identity = new ClaimsIdentity(new[] {
                     new Claim(ClaimTypes.Name,checkUser.Username ),
@@ -73,11 +80,11 @@ namespace TempEmbeddin2302C2.Controllers
                     controller = "Admin";
 
                     HttpContext.Session.SetInt32("UserID", checkUser.Id);
-                    HttpContext.Session.SetString("UserEmail", checkUser.Email) ;
+                    HttpContext.Session.SetString("UserEmail", checkUser.Email);
 
 
                 }
-                else if( verifyPass == PasswordVerificationResult.Success && checkUser.RoleId == 2)
+                else if (verifyPass == PasswordVerificationResult.Success && checkUser.RoleId == 2)
                 {
                     identity = new ClaimsIdentity(new[] {
                     new Claim(ClaimTypes.Name,checkUser.Username ),
@@ -89,7 +96,7 @@ namespace TempEmbeddin2302C2.Controllers
                     isAuthenticated = true;
                     controller = "Home";
                     HttpContext.Session.SetInt32("UserID", checkUser.Id);
-                    HttpContext.Session.SetString("UserEmail", checkUser.Email); 
+                    HttpContext.Session.SetString("UserEmail", checkUser.Email);
                 }
                 else
                 {
@@ -104,10 +111,10 @@ namespace TempEmbeddin2302C2.Controllers
 
                     var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-                    return RedirectToAction("Index",controller);
+                    return RedirectToAction("Index", controller);
 
                 }
-               
+
                 else
                 {
                     ViewBag.msg = "Login Failed";
@@ -123,10 +130,27 @@ namespace TempEmbeddin2302C2.Controllers
                 return View();
             }
 
-            
-            
-        }
 
+
+        }
+        public bool SendEmail(string email, string message, string subject)
+        {
+
+            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            client.EnableSsl = true;
+            client.UseDefaultCredentials = false;
+            client.Credentials = new NetworkCredential("owais1566@gmail.com", "");
+
+            MailMessage msg = new MailMessage("owais1566@gmail.com", email);
+            msg.Subject = subject;
+            msg.Body = message;
+
+            // msg.Attachments.Add(new Attachment(PathToAttachment));
+            client.Send(msg);
+
+
+            return true;
+        }
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("UserID");
