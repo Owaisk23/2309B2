@@ -22,6 +22,25 @@ namespace firstproject.Controllers
             return Ok(db.Cars.ToList());
         }
 
+        [HttpPost]
+        public IActionResult AddCar(Car car)
+        {
+
+            db.Cars.Add(car);
+            db.SaveChanges();
+            return StatusCode(201);
+
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteCar(int id)
+        {
+            var car = db.Cars.Find(id);
+            db.Cars.Remove(car);
+            db.SaveChanges();
+            return StatusCode(201);
+        }
+
 
 
 
