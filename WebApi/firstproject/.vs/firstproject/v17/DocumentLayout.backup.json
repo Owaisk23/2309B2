@@ -34,8 +34,7 @@
               "RelativeToolTip": "firstproject\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T05:51:20.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T05:51:20.353Z"
             },
             {
               "$type": "Document",
@@ -43,9 +42,9 @@
               "Title": "MyController.cs",
               "DocumentMoniker": "Z:\\Desktop\\2309B2\\WebApi\\firstproject\\firstproject\\Controllers\\MyController.cs",
               "RelativeDocumentMoniker": "firstproject\\Controllers\\MyController.cs",
-              "ToolTip": "Z:\\Desktop\\2309B2\\WebApi\\firstproject\\firstproject\\Controllers\\MyController.cs",
-              "RelativeToolTip": "firstproject\\Controllers\\MyController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
+              "ToolTip": "Z:\\Desktop\\2309B2\\WebApi\\firstproject\\firstproject\\Controllers\\MyController.cs*",
+              "RelativeToolTip": "firstproject\\Controllers\\MyController.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T04:51:50.383Z",
               "EditorCaption": ""

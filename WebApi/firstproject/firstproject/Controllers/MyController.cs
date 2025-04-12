@@ -47,6 +47,18 @@ namespace firstproject.Controllers
             return StatusCode(201);
         }
 
+        [HttpPut("{id}")]
+        public IActionResult UpdateCar(int id, Car updateCar)
+        {
+            var car = db .Cars.Find(id);
+            car.Name = updateCar.Name;
+            car.Brand = updateCar.Brand;
+            car.Price = updateCar.Price;
+            db.Cars.Update(car);
+            db.SaveChanges();
+            return StatusCode(201);
+        }
+
 
 
 
