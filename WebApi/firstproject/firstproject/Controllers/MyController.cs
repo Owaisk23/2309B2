@@ -22,6 +22,12 @@ namespace firstproject.Controllers
             return Ok(db.Cars.ToList());
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetCar(int id)
+        {
+            return Ok(db.Cars.Find(id));
+        }
+
         [HttpPost]
         public IActionResult AddCar(Car car)
         {

@@ -42,6 +42,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "firstproject.Controllers.MyController",
+    "Method": "GetCar",
+    "RelativePath": "api/My/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "firstproject.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
