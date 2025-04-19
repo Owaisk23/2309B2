@@ -59,7 +59,39 @@ namespace firstproject.Controllers
             return StatusCode(201);
         }
 
+        [HttpGet("Search/{query}")]
+        public IActionResult SearchProduct(string query)
+        {
+            // For partial match search
+            var products = db.Cars
+                                   .Where(o => o.Name.Contains(query)
+                                           || o.Brand.Contains(query)
+                                          )
+                                   .ToList(); // Partial Match
 
+            return Ok(products);
+        }
+
+        [HttpGet("Pagination/{pageNo}/{pageSize}")]
+        public IActionResult Pagination(int pageNo = 1, int pageSize = 2)
+        {
+            int pageno = pageNo;
+            if(pageno < 1) pageno = 1;
+            int pagesize = pageSize;
+            if(pagesize < 1) pagesize = 1;
+
+            var getEvents = db.Cars.Skip((pageno - 1) * pagesize).Take(pagesize);
+
+            if (getEvents != null)
+            {
+                return Ok(getEvents);
+            }
+            else
+            {
+                return Ok("End of list");
+            }
+
+        }
 
 
         //[HttpGet]
