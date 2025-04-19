@@ -1,8 +1,20 @@
 using firstproject.Models;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:4200") // Add your MVC URL
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -11,6 +23,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<CarsContext>();
 var app = builder.Build();
 
+app.UseCors("AllowSpecificOrigins");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
