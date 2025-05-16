@@ -70,9 +70,9 @@ void main(){
 
 
   //LIST
-  List<String> stdNames = ["Ayan", "Luqman", "Maaz", " Daniyal", "Sami", "Hussain", "Huzaifa"];
+  // List<String> stdNames = ["Ayan", "Luqman", "Maaz", "Ayan", " Daniyal", "Sami", "Hussain", "Huzaifa"];
 
-  print("List of Students: $stdNames");
+  // print("List of Students: $stdNames");
   // print("Student Name: ${stdNames[4]}");
   // print("Length of List: ${stdNames.length}");
   // print("Hash Code of List: ${stdNames.hashCode}");
@@ -82,8 +82,8 @@ void main(){
   //CRUD
   // stdNames.add("Ali");
   // print("List after adding new student: $stdNames");
-  stdNames.insert(0, "Abdullah");
- print("List after adding new student: $stdNames"); 
+//   stdNames.insert(0, "Abdullah");
+//  print("List after adding new student: $stdNames"); 
   //remove
   // stdNames.remove("Sami");
   // print("List after removing student: $stdNames");
@@ -94,7 +94,44 @@ void main(){
   // print("List after clear method student: $stdNames");
 
   //update
-  stdNames[3] = "Alyan";
-  print("List after updating student: $stdNames");
+  // stdNames[3] = "Alyan";
+  // print("List after updating student: $stdNames");
+
+  // //SET
+  // Set<String> countries = {"Pakistan", "India", "Bangladesh", "Pakistan", "Nepal", "Sri Lanka", "Bhutan"};
+  // // It contains only unique values
+  // print("Set of Countries: $countries");
+  // countries.add("UK");
+  // print("Set of Countries after adding new country: $countries");
+  // countries.remove("Pakistan");
+  // print("Set of Countries after removing country: $countries");
+
+  //MAP
+  Map<String, String> stdDetails = {
+    "Name": "Ayan",
+    "Age": "24",
+    "Height": "5.9",
+    "Weight": "70.5",
+    "Country": "Pakistan"
+  };
+  print("Map of Student Details: $stdDetails");
+  print("Student Name: ${stdDetails["Name"]}");
+  print("Student Weight: ${stdDetails["Weight"]}");
+
+  //add
+  stdDetails["City"] = "Karachi";
+  print("Map of Student Details after adding new key: $stdDetails");
+
+  //remove
+  stdDetails.remove("City");
+  print("Map of Student Details after removing key: $stdDetails");
+
+  //update
+  stdDetails["Age"] = "25";
+  print("Map of Student Details after updating key: $stdDetails");
+
+
+
+
 
 }
