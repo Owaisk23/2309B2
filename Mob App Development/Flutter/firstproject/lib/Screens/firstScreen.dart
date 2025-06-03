@@ -25,6 +25,7 @@ class _FirstScreenState extends State<FirstScreen> {
               height: 200,
               width: 500,
             ),
+            SizedBox(height: 30,),
             Text(
               'Welcome to the Cow Mandi',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
