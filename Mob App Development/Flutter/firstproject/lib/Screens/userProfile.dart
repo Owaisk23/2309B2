@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firstproject/Screens/drawerSide.dart' as drawerSide;
+
 
 class UserProfile extends StatefulWidget {
   const UserProfile({ Key? key }) : super(key: key);
@@ -22,6 +24,7 @@ class _UserProfileState extends State<UserProfile> {
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
+      drawer: drawerSide.DrawerSide(),
       body: Center(
         child: Column(
           children: [

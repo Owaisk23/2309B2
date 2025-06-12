@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:firstproject/Screens/drawerSide.dart' as drawerSide;
+
 
 class BoxlistView extends StatefulWidget {
   const BoxlistView({Key? key}) : super(key: key);
@@ -17,6 +19,7 @@ class _BoxlistViewState extends State<BoxlistView> {
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
+      drawer: drawerSide.DrawerSide(),
       body:  Padding(
         // padding: const EdgeInsets.all(20),
         // padding: const EdgeInsets.only(top: 30, left: 15, right: 20, bottom: 45),

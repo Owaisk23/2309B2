@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:firstproject/Screens/drawerSide.dart' as drawerSide;
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({ Key? key }) : super(key: key);
@@ -17,6 +18,7 @@ class _FirstScreenState extends State<FirstScreen> {
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
+      drawer: drawerSide.DrawerSide(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -1,6 +1,7 @@
 import 'package:firstproject/Screens/boxlistView.dart';
 import 'package:firstproject/Screens/userProfile.dart';
 import 'package:flutter/material.dart';
+import 'package:firstproject/Screens/drawerSide.dart' as drawerSide;
 
 class Product extends StatefulWidget {
   const Product({ Key? key }) : super(key: key);
@@ -19,6 +20,7 @@ class _ProductState extends State<Product> {
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
+      drawer: drawerSide.DrawerSide(),
       body: Center(
         child: Container(
           width: 300,
