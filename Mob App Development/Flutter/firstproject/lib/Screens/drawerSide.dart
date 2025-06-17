@@ -1,4 +1,5 @@
 import 'package:firstproject/Screens/boxlistView.dart';
+import 'package:firstproject/Screens/darazScreen.dart';
 import 'package:firstproject/Screens/dynamicList.dart';
 import 'package:firstproject/Screens/firstScreen.dart';
 import 'package:firstproject/Screens/product.dart';
@@ -64,6 +65,13 @@ class _DrawerSideState extends State<DrawerSide> {
             title: Text('Dynamic List'),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => DynamicList()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.list),
+            title: Text('Daraz Screen'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DarazScreen()));
             },
           ),
         ],
