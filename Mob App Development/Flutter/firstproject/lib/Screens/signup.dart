@@ -1,5 +1,5 @@
+import 'package:firstproject/Screens/drawerSide.dart' as drawerSide;
 import 'package:flutter/material.dart';
-import 'package:firstproj/drawerSide.dart' as drawerSide;
 
 class Signup extends StatefulWidget {
   const Signup({ Key? key }) : super(key: key);
@@ -13,6 +13,7 @@ class _SignupState extends State<Signup> {
   TextEditingController userNameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passController = TextEditingController();
+
 
   void RegisterUser() {
     if (_signupKey.currentState!.validate()) {
@@ -30,16 +31,8 @@ class _SignupState extends State<Signup> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Signup",
-          style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: Colors.deepPurple,
-        foregroundColor: Colors.white,
-        centerTitle: true,
-      ),
+     return Scaffold(
+      appBar: AppBar(),
       drawer: drawerSide.DrawerSide(),
       body: Center(
           child: Container(
@@ -55,7 +48,9 @@ class _SignupState extends State<Signup> {
                     key: _signupKey,
                     child: Column(
                       children: [
-                        SizedBox(height: 25,),
+                        SizedBox(
+                          height: 25,
+                        ),
                         Text(
                           "Create an account..",
                           style: TextStyle(
@@ -64,7 +59,9 @@ class _SignupState extends State<Signup> {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        SizedBox(height: 20,),
+                        SizedBox(
+                          height: 20,
+                        ),
                         TextFormField(
                           validator: (value) {
                             if (value!.isEmpty) {
@@ -81,14 +78,17 @@ class _SignupState extends State<Signup> {
                               hintText: "enter username"),
                         ),
                         // email
-                        SizedBox(height: 20,),
+                        SizedBox(
+                          height: 20,
+                        ),
                         TextFormField(
                           validator: (value) {
                             if (value!.isEmpty) {
                               return ("email is required");
                             }
                             if (!RegExp(
-                                    r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$').hasMatch(value)) {
+                                    r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
+                                .hasMatch(value)) {
                               return ("email format is not valid");
                             }
                             return null;
@@ -102,14 +102,17 @@ class _SignupState extends State<Signup> {
                         ),
 
                         //password
-                        SizedBox(height: 20, ),
+                        SizedBox(
+                          height: 20,
+                        ),
                         TextFormField(
                           validator: (value) {
                             if (value!.isEmpty) {
                               return ("password is required");
                             }
                             if (!RegExp(
-                                    r'^(?=.*[a-z])(?=.*\d)[A-Za-z\d@$!%*?&]{5,}$').hasMatch(value)) {
+                                    r'^(?=.*[a-z])(?=.*\d)[A-Za-z\d@$!%*?&]{5,}$')
+                                .hasMatch(value)) {
                               return ("password must have an uppercase,lowercase,digit, special character and have at least 5 characters");
                             }
                             return null;
@@ -124,7 +127,9 @@ class _SignupState extends State<Signup> {
                               hintText: "enter password"),
                         ),
 
-                        SizedBox(height: 20,),
+                        SizedBox(
+                          height: 20,
+                        ),
                         // submit button
                         ElevatedButton(
                             onPressed: RegisterUser, child: Text("Sign up"))

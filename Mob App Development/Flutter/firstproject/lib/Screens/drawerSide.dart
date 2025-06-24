@@ -3,6 +3,8 @@ import 'package:firstproject/Screens/darazScreen.dart';
 import 'package:firstproject/Screens/dynamicList.dart';
 import 'package:firstproject/Screens/firstScreen.dart';
 import 'package:firstproject/Screens/product.dart';
+import 'package:firstproject/Screens/signup.dart';
+
 import 'package:firstproject/Screens/userProfile.dart';
 import 'package:flutter/material.dart';
 
@@ -74,6 +76,14 @@ class _DrawerSideState extends State<DrawerSide> {
               Navigator.push(context, MaterialPageRoute(builder: (context) => DarazScreen()));
             },
           ),
+          ListTile(
+            leading: Icon(Icons.list),
+            title: Text('SignUp Screen'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Signup()));
+            },
+          ),
+          
         ],
       ),
     );
