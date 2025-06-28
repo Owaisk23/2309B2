@@ -137,7 +137,10 @@ class _SignupState extends State<Signup> {
                         // TextField()
                       ],
                     ),
-                  )))),
+                  )
+                )
+              )
+            ),
       // drawer: ,
       // bottomNavigationBar: ,
     );
