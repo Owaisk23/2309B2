@@ -1,3 +1,4 @@
+import 'package:firstproject/Screens/BillCalculator.dart';
 import 'package:firstproject/Screens/boxlistView.dart';
 import 'package:firstproject/Screens/darazScreen.dart';
 import 'package:firstproject/Screens/dynamicList.dart';
@@ -70,14 +71,14 @@ class _DrawerSideState extends State<DrawerSide> {
             },
           ),
           ListTile(
-            leading: Icon(Icons.list),
+            leading: Icon(Icons.shop),
             title: Text('Daraz Screen'),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => DarazScreen()));
             },
           ),
           ListTile(
-            leading: Icon(Icons.list),
+            leading: Icon(Icons.music_note),
             title: Text('Song App Screen'),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => SongApp()));
@@ -85,10 +86,17 @@ class _DrawerSideState extends State<DrawerSide> {
           ),
           
           ListTile(
-            leading: Icon(Icons.list),
+            leading: Icon(Icons.login),
             title: Text('SignUp Screen'),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => Signup()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.book),
+            title: Text('Bill Calculator Screen'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => BillCalculator()));
             },
           ),
           
