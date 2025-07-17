@@ -1,0 +1,42 @@
+//one time
+npm install --save -g firebase
+npm install -g firebase-tools
+
+//within project
+dart pub global activate flutterfire_cli
+
+add environment variable path
+C:\Users\owaisahmed\AppData\Local\Pub\Cache\bin
+
+C:\Users\owaisahmed\AppData\Roaming\npm
+firebase login
+flutterfire configure
+//select project
+// web, android and ios
+//firebase.json & firebase_options
+------------------------------------------------- 
+
+flutter pub add firebase_core
+flutter pub add cloud_firestore
+
+------------------------------------------------- 
+//for every project
+dart pub global activate flutterfire_cli
+firebase login
+flutterfire configure
+flutter pub add firebase_core
+flutter pub add cloud_firestore
+change main func with below code in main.dart;
+
+void main()async {
+
+  await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+);
+  runApp(const MyApp());
+}
+
+//Firebase Authentication
+flutter pub add firebase_auth
+flutter pub add cloud_firestore
+flutter pub add firebase_core
