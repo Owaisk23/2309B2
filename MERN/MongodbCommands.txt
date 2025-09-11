@@ -1,0 +1,30 @@
+mongsh
+show dbs
+use gadgets
+show collections
+
+
+db.products.insertOne({title:"USB Type C",price:550,brand:"Taar",stock:65})
+db.products.insertMany([{title:"USB Type C",price:550,brand:"Taar",stock:65,cat_id:1},{title:"USB Type C to C",price:850,brand:"Ronin",stock:80,cat_id:1},{title:"USB Type A",price:250,brand:"Taar",stock:150,cat_id:2},{title:"USB Type C to Lightining",price:1250,brand:"Ronin",stock:10,cat_id:2},{title:"USB Type C to C",price:450,brand:"Faster",stock:78,cat_id:3}])
+
+
+
+
+
+
+
+
+db.products.find({ $or: [ { price: { $lt: 560 } }, { brand: { $ne: "Ronin" } }] })
+db.products.find({$and:[{brand:"Taar"},{price:{$lte:500}}]})
+db.products.find({$or:[{brand:"Taar"},{price:{$gte:1500}}]})
+
+
+
+
+ db.products.find({
+$and:[
+{brand:"Taar"},
+{$or:[
+{price:{$lt:1400}},
+{brand:{$ne:"Taar"}
+}]}]})
