@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import carImg from "./assets/porshe.jpg"
 import { useState } from "react";
 import Bulb from "./components/Bulb";
+import Todo from "./components/Todo";
 
 function App() {
 
@@ -83,6 +84,8 @@ function App() {
       <button className="btn btn-primary" onClick={handleUserUpdate}>Update User</button>
 
       <Bulb />
+
+      <Todo />
     </>
   );
 }
