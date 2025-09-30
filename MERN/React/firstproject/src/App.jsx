@@ -3,6 +3,7 @@ import MyName from "./components/MyName";
 import Navbar from "./components/Navbar";
 import carImg from "./assets/porshe.jpg"
 import { useState } from "react";
+import Bulb from "./components/Bulb";
 
 function App() {
 
@@ -80,6 +81,8 @@ function App() {
         })
       }
       <button className="btn btn-primary" onClick={handleUserUpdate}>Update User</button>
+
+      <Bulb />
     </>
   );
 }

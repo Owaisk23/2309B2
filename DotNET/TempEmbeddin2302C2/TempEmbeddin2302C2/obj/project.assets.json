@@ -11283,11 +11283,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\SERVER2\\faculty_drive\\OwaisAhmed\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj",
+      "projectUniqueName": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj",
       "projectName": "TempEmbeddin2302C2",
-      "projectPath": "\\\\SERVER2\\faculty_drive\\OwaisAhmed\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj",
+      "projectPath": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj",
       "packagesPath": "C:\\Users\\owaisahmed\\.nuget\\packages\\",
-      "outputPath": "\\\\SERVER2\\faculty_drive\\OwaisAhmed\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\obj\\",
+      "outputPath": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
