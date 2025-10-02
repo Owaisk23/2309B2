@@ -16,11 +16,7 @@ const Todo = () => {
   return (
     <>
       <h1>Todo Application</h1>
-      <input
-        type="text"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
+      <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
       <button className="btn btn-primary" onClick={addTodo}>
         Add Todo
       </button>
@@ -29,17 +25,17 @@ const Todo = () => {
       {list.length > 0 ? (
         list.map((item, index) => {
           return (
-            <div className="d-flex align-items-center gap-3 mb-2">
-              <h3 key={index}>
+            <div key={index} className="d-flex align-items-center gap-3 mb-2">
+              <h3 >
                 {index + 1}. {item}
               </h3>
-              <button className="btn btn-success" onClick={editTodo}>Edit</button>
-              <button className="btn btn-danger" onClick={deleteTodo}>Delete</button>
+              <button className="btn btn-success" >Edit</button>
+              <button className="btn btn-danger" >Delete</button>
             </div>
           );
         })
       ) : (
-        <h3>No Todo Found</h3>
+        <h3>No Item Found</h3>
       )}
     </>
   );
