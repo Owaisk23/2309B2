@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86E58788-E5EF-477B-8611-2803DC46A0FA}|TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj|z:\\desktop\\2309b2\\dotnet\\tempembeddin2302c2\\tempembeddin2302c2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86E58788-E5EF-477B-8611-2803DC46A0FA}|TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj|solutionrelative:tempembeddin2302c2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86E58788-E5EF-477B-8611-2803DC46A0FA}|TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj|z:\\desktop\\2309b2\\dotnet\\tempembeddin2302c2\\tempembeddin2302c2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86E58788-E5EF-477B-8611-2803DC46A0FA}|TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj|solutionrelative:tempembeddin2302c2\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86E58788-E5EF-477B-8611-2803DC46A0FA}|TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj|z:\\desktop\\2309b2\\dotnet\\tempembeddin2302c2\\tempembeddin2302c2\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86E58788-E5EF-477B-8611-2803DC46A0FA}|TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj|solutionrelative:tempembeddin2302c2\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86E58788-E5EF-477B-8611-2803DC46A0FA}|TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj|z:\\desktop\\2309b2\\dotnet\\tempembeddin2302c2\\tempembeddin2302c2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86E58788-E5EF-477B-8611-2803DC46A0FA}|TempEmbeddin2302C2\\TempEmbeddin2302C2.csproj|solutionrelative:tempembeddin2302c2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "TempEmbeddin2302C2\\Controllers\\ProductController.cs",
+              "ToolTip": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "TempEmbeddin2302C2\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T13:03:55.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "TempEmbeddin2302C2\\Controllers\\ItemController.cs",
+              "ToolTip": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "TempEmbeddin2302C2\\Controllers\\ItemController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwHcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T13:02:53.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TempEmbeddin2302C2\\Controllers\\AuthController.cs",
+              "ToolTip": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TempEmbeddin2302C2\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAcwI8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T12:45:36.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TempEmbeddin2302C2\\Controllers\\HomeController.cs",
+              "ToolTip": "Z:\\Desktop\\2309B2\\DotNET\\TempEmbeddin2302C2\\TempEmbeddin2302C2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TempEmbeddin2302C2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAiwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T10:28:36.445Z",
+              "EditorCaption": ""
             }
           ]
         }

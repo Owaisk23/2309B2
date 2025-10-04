@@ -5,6 +5,7 @@ import carImg from "./assets/porshe.jpg"
 import { useState } from "react";
 import Bulb from "./components/Bulb";
 import Todo from "./components/Todo";
+import ApiFetch from "./components/ApiFetch";
 
 function App() {
 
@@ -58,7 +59,7 @@ function App() {
 
     <>
       <Navbar />
-      <h1 className="heading">Hello, in React App!</h1>
+      {/* <h1 className="heading">Hello, in React App!</h1> */}
       {/* <h2>{userData[1].name} {userData[1].profession}</h2>
       <h2>{userData[3].name} {userData[3].profession}</h2> */}
       {/* <MyName name="Ashar" profession="FrontEnd Developer"/>
@@ -75,17 +76,19 @@ function App() {
       {/* <h1>{count}</h1>
       <button className="btn btn-primary" onClick={handleIncrement}>Increment</button> */}
       {/* <h1>Name: {user.name} Profession: {user.profession}</h1> */}
-      <h1>Students List:</h1>
+      {/* <h1>Students List:</h1>
       {
         std.map((student, index) => {
           return <h2 key={index}>{index + 1}. {student}</h2>
         })
       }
-      <button className="btn btn-primary" onClick={handleUserUpdate}>Update User</button>
+      <button className="btn btn-primary" onClick={handleUserUpdate}>Update User</button> */}
 
-      <Bulb />
+      {/* <Bulb /> */}
 
-      <Todo />
+      {/* <Todo /> */}
+
+      <ApiFetch />
     </>
   );
 }

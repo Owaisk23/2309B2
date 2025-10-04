@@ -146,7 +146,7 @@ namespace TempEmbeddin2302C2.Controllers
             msg.Body = message;
 
             // msg.Attachments.Add(new Attachment(PathToAttachment));
-            client.Send(msg);
+            //client.Send(msg);
 
 
             return true;
