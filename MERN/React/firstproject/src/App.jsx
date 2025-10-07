@@ -1,14 +1,15 @@
-
 import MyName from "./components/MyName";
 import Navbar from "./components/Navbar";
-import carImg from "./assets/porshe.jpg"
+import carImg from "./assets/porshe.jpg";
 import { useState } from "react";
 import Bulb from "./components/Bulb";
 import Todo from "./components/Todo";
 import ApiFetch from "./components/ApiFetch";
+import { Routes, Route } from "react-router";
+import Parent from "./components/Parent";
+import Dashboard from "./components/Dashboard";
 
 function App() {
-
   let userData = [
     { name: "Ashar", profession: "FrontEnd Developer" },
     { name: "Luqman", profession: "Flutter Developer" },
@@ -18,7 +19,7 @@ function App() {
     { name: "Usman", profession: "UIUX Designer" },
     { name: "Kharadar", profession: "UIUX Designer" },
     { name: "Moin", profession: "UIUX Designer" },
-  ]
+  ];
 
   // let count = 0;
 
@@ -36,9 +37,8 @@ function App() {
   // const [count, setCount] = useState(0);
 
   // const [user, setUser] = useState({ name: "Ashar", profession: "FrontEnd Developer" });
-  
-  const [std, setStd]  = useState(["Ashar", "Luqman", "Ayan Shakeel"]);
 
+  const [std, setStd] = useState(["Ashar", "Luqman", "Ayan Shakeel"]);
 
   // const handleIncrement = () => {
   //   // count++;
@@ -51,32 +51,31 @@ function App() {
 
     setStd([...std, "Huzaifa"]);
     console.log("User Updated:", std);
-  }
+  };
 
   return (
-
     console.log("App component rendered"),
-
-    <>
-      <Navbar />
-      {/* <h1 className="heading">Hello, in React App!</h1> */}
-      {/* <h2>{userData[1].name} {userData[1].profession}</h2>
+    (
+      <>
+        <Navbar />
+        {/* <h1 className="heading">Hello, in React App!</h1> */}
+        {/* <h2>{userData[1].name} {userData[1].profession}</h2>
       <h2>{userData[3].name} {userData[3].profession}</h2> */}
-      {/* <MyName name="Ashar" profession="FrontEnd Developer"/>
+        {/* <MyName name="Ashar" profession="FrontEnd Developer"/>
       <MyName name="Luqman" profession="Flutter Developer"/> */}
 
-      {/* {
+        {/* {
         userData.map((data, index) => {
           return <MyName key={index} name={data.name} profession={data.profession} />
         })
       }
      */}
 
-      {/* <img src={carImg} alt="" width={300} height={200} /> */}
-      {/* <h1>{count}</h1>
+        {/* <img src={carImg} alt="" width={300} height={200} /> */}
+        {/* <h1>{count}</h1>
       <button className="btn btn-primary" onClick={handleIncrement}>Increment</button> */}
-      {/* <h1>Name: {user.name} Profession: {user.profession}</h1> */}
-      {/* <h1>Students List:</h1>
+        {/* <h1>Name: {user.name} Profession: {user.profession}</h1> */}
+        {/* <h1>Students List:</h1>
       {
         std.map((student, index) => {
           return <h2 key={index}>{index + 1}. {student}</h2>
@@ -84,12 +83,32 @@ function App() {
       }
       <button className="btn btn-primary" onClick={handleUserUpdate}>Update User</button> */}
 
-      {/* <Bulb /> */}
+        {/* <Bulb /> */}
 
-      {/* <Todo /> */}
+        {/* <Todo /> */}
 
-      <ApiFetch />
-    </>
+        {/* <ApiFetch /> */}
+
+        {/* Nested and Group Routing  */}
+        <Routes>
+          <Route path="/" element={<Parent />} />
+          <Route path="/bulb" element={<Bulb />} />
+          <Route path="*" element={<h1>404 Not Found</h1>} />
+          <Route path="admin/">
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="products/">
+              <Route path="add" element={<Bulb />} />
+              <Route path="show" element={<ApiFetch />} />
+            </Route>
+          </Route>
+        </Routes>
+
+         {/* Consider you have 4 Roles
+      Admin have 4 group routes
+      Seller has 2 group routes
+      Employee has 3 group routes */}
+      </>
+    )
   );
 }
 
