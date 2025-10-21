@@ -1,11 +1,17 @@
 // const express = require('express')
 import express from 'express';
 import path from 'path';
+import fs from 'node:fs';
+
 const app = express()
 const port = 3000
 const dirname = path.resolve();
 
 app.use(express.json());
+
+const data = JSON.parse(fs.readFileSync('data.json', 'utf-8'));
+
+let products = data.products;
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -22,9 +28,9 @@ app.get('/image', (req, res) => {
 app.use('/home', express.static(dirname, {index: '/static/index.html'}));
 
 // Router Parameter (They are compulsory)
-app.get('/product/:id', (req, res) => {
-  res.json({name: "Product No " + req.params.id})
-})
+// app.get('/product/:id', (req, res) => {
+//   res.json({name: "Product No " + req.params.id})
+// })
 
 app.get('/posts/:id', (req, res) => {
   let postId = req.params.id;
@@ -93,8 +99,31 @@ app.post('/contact', (req, res) => {
   res.json({name: name, email: email, message: message})
 })
 
+app.get('/products', (req, res) => {
+  try{
+    res.status(200).json({message: "Products fetched successfully", products: products})
+  }
+  catch(err){
+    res.status(500).json({message: "Error fetching products", error: err.message})
+  }
+})
 
+//fetch single product
 
+app.get('/product/:id', (req, res) => {
+  try{
+    let productId = req.params.id;
+    let product = products.find(p => p.id == productId);
+    if(product){
+          res.status(200).json({message: "Products fetched successfully", products: product})
+    }else{
+          res.status(404).json({message: "Product not found"})
+    }
+  }
+  catch(err){
+    res.status(500).json({message: "Error fetching products", error: err.message})
+  }
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
