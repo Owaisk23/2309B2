@@ -99,6 +99,7 @@ app.post('/contact', (req, res) => {
   res.json({name: name, email: email, message: message})
 })
 
+//fetch all products
 app.get('/products', (req, res) => {
   try{
     res.status(200).json({message: "Products fetched successfully", products: products})
@@ -125,6 +126,38 @@ app.get('/product/:id', (req, res) => {
   }
 })
 
+// add product
+app.post('/addproduct', (req, res) => {
+  try{
+    let newProduct =req.body;
+    let addproduct = products.push(newProduct);
+    console.log(newProduct);
+    if(addproduct){
+          res.status(200).json({message: "Products added successfully", products: newProduct})
+    }else{
+          res.status(404).json({message: "Product not added"})
+    }
+  }
+  catch(err){
+    res.status(500).json({message: "Error fetching products", error: err.message})
+  }
+})
+
+// Delete product
+app.delete('/deleteproduct/:id', (req, res) => {
+  try{
+    let productId = req.params.id;
+    let deleteProduct = products.find(p => p.id == productId);
+    if(!deleteProduct){
+      return res.status(404).json({message: "Product not found"})
+    }
+    products = products.filter(p => p.id != productId);
+    res.status(200).json({message: "Product deleted successfully", products: products})
+  }
+  catch(err){
+    res.status(500).json({message: "Error deleting products", error: err.message})
+  }
+})
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
