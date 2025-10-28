@@ -2,6 +2,7 @@
 import express from 'express';
 import path from 'path';
 import fs from 'node:fs';
+import productRouter from './routes/productRoutes.mjs';
 
 const app = express()
 const port = 3000
@@ -100,48 +101,48 @@ app.post('/contact', (req, res) => {
 })
 
 //fetch all products
-app.get('/products', (req, res) => {
-  try{
-    res.status(200).json({message: "Products fetched successfully", products: products})
-  }
-  catch(err){
-    res.status(500).json({message: "Error fetching products", error: err.message})
-  }
-})
+// app.get('/products', (req, res) => {
+//   try{
+//     res.status(200).json({message: "Products fetched successfully", products: products})
+//   }
+//   catch(err){
+//     res.status(500).json({message: "Error fetching products", error: err.message})
+//   }
+// })
 
 //fetch single product
 
-app.get('/product/:id', (req, res) => {
-  try{
-    let productId = req.params.id;
-    let product = products.find(p => p.id == productId);
-    if(product){
-          res.status(200).json({message: "Products fetched successfully", products: product})
-    }else{
-          res.status(404).json({message: "Product not found"})
-    }
-  }
-  catch(err){
-    res.status(500).json({message: "Error fetching products", error: err.message})
-  }
-})
+// app.get('/product/:id', (req, res) => {
+//   try{
+//     let productId = req.params.id;
+//     let product = products.find(p => p.id == productId);
+//     if(product){
+//           res.status(200).json({message: "Products fetched successfully", products: product})
+//     }else{
+//           res.status(404).json({message: "Product not found"})
+//     }
+//   }
+//   catch(err){
+//     res.status(500).json({message: "Error fetching products", error: err.message})
+//   }
+// })
 
 // add product
-app.post('/addproduct', (req, res) => {
-  try{
-    let newProduct =req.body;
-    let addproduct = products.push(newProduct);
-    console.log(newProduct);
-    if(addproduct){
-          res.status(200).json({message: "Products added successfully", products: newProduct})
-    }else{
-          res.status(404).json({message: "Product not added"})
-    }
-  }
-  catch(err){
-    res.status(500).json({message: "Error fetching products", error: err.message})
-  }
-})
+// app.post('/addproduct', (req, res) => {
+//   try{
+//     let newProduct =req.body;
+//     let addproduct = products.push(newProduct);
+//     console.log(newProduct);
+//     if(addproduct){
+//           res.status(200).json({message: "Products added successfully", products: newProduct})
+//     }else{
+//           res.status(404).json({message: "Product not added"})
+//     }
+//   }
+//   catch(err){
+//     res.status(500).json({message: "Error fetching products", error: err.message})
+//   }
+// })
 
 // Delete product
 app.delete('/deleteproduct/:id', (req, res) => {
@@ -158,6 +159,9 @@ app.delete('/deleteproduct/:id', (req, res) => {
     res.status(500).json({message: "Error deleting products", error: err.message})
   }
 })
+
+app.use('/products', productRouter);
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
