@@ -48,9 +48,44 @@ let Signup = async(req, res) => {
 }
 
 
+//login
+
+let Login =async (req, res) => {
+   try {
+    const {  email, password}=req.body;
+    // checking if the user doesn't exist
+    let checkUser= await User.findOne({email:email});
+    if (checkUser) {
+      // hashing the password
+
+      const checkPassword = bcrypt.compareSync( password   , checkUser.password) // true/false
+      console.log(checkPassword)
+      console.log(checkUser)
+    
+      if (checkPassword) {
+        const token= await jwt.sign({checkUser}, process.env.JWT_SECRET, { expiresIn: '1h' });
+        console.log(token);
+        res.status(200).json({message:"Login success...!",user:checkUser,token:token});
+      } else {
+      
+        res.status(401).json({message:"Invalid Credentials"});
+      }
+    } else {
+      res.status(404).json({message:"User not found. Please Signup..!"});
+      
+    }
+
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({message:error.message})
+  }
+}
+
+
 const userController = {
     index,
-    Signup
+    Signup,
+    Login
 }
 
 export default userController;

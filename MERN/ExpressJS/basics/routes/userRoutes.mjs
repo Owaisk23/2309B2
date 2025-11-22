@@ -8,5 +8,6 @@ const userRouter = express.Router();
 userRouter
 .get('/', userController.index)
 .post('/signup', userController.Signup)
+.post('/login', userController.Login);
 
 export default userRouter;
