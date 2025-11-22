@@ -6,6 +6,7 @@ import productRouter from './routes/productRoutes.mjs';
 // getting-started.js
 // const mongoose = require('mongoose');
 import mongoose from 'mongoose';
+import userRouter from './routes/userRoutes.mjs';
 const app = express()
 const port = 3000
 // const dirname = path.resolve();
@@ -172,6 +173,7 @@ async function main() {
 // })
 
 app.use('/products', productRouter);
+app.use('/users', userRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
