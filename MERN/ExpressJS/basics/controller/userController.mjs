@@ -1,7 +1,7 @@
 import User from '../models/userModel.mjs'
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-
+import nodemailer from 'nodemailer';
 // Fetching data from database
 let index = async (req, res) => {
   try {
